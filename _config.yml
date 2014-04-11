@@ -1,7 +1,7 @@
 name: Your Blog's Name
 description: A description for your blog
-url: http://sarhov-insales.github.io/perfectgold/
-baseurl:     /
+url: http://sarhov-insales.github.io/perfectgold
+baseurl:     /perfectgold
 markdown: redcarpet
 pygments: true
 paginate: 20

@@ -1,6 +1,6 @@
 name: Your Blog's Name
 description: A description for your blog
-url: http://sarhov-insales.github.io/
+url: http://sarhov-insales.github.io/perfectgold
 markdown: redcarpet
 pygments: true
 paginate: 20

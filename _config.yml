@@ -1,6 +1,8 @@
 name: Perfect Gold
-baseurl: /perfectgold
 description: Описание Магазина
+
+# site url if it will live in project page
+# baseurl: /perfectgold
 markdown: rdiscount
 encoding: utf-8
 pygments: true

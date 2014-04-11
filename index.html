@@ -3,17 +3,30 @@ layout: default
 title: Главная страница
 ---
 {{site.description}}
-քֆքֆքֆ
+
 <div id="home">
   <h1>Blog Posts</h1>
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
-
-
-    {% for i in (1..5) %}
-    	titie
-    {% endfor %}
   </ul>
+
+  <div class="main">
+  	<ul class="nav">
+  		{% for i in (1..8) %}
+  			<li class="nav-item">
+  				<a href="" class="nav-item-link">Название меню {{forloop.index}} </a>
+  			</li>  		
+  			{% endfor %}
+  	</ul>
+  </div>
+  <div class="articles">
+
+
+{% for i in (1..9) %}
+	<li>hey</li>
+{% endfor %}
+
+  </div>
 </div>

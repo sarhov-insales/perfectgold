@@ -88,6 +88,47 @@ overflow: hidden;
 
 /* END LOADER */
 
+
+/*foundation resets*/
+
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea{
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	background: none;
+	border: 1px solid #ebebeb;
+	height: 2.1125rem;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, textarea:focus{
+	-webkit-box-shadow: inset 0 0 1px #AAA7A7 ;
+	-moz-box-shadow: inset 0 0 1px #AAA7A7 ;
+	box-shadow: inset 0 0 1px #AAA7A7 ;
+	background: none;
+}
+
+button, .button{
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	text-transform: uppercase;
+	color: #474545;
+	background: none;
+	border: 1px solid #ddd;
+	padding:0.75rem;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	margin: 0;
+}
+
+button:hover, .button:hover{
+border-color: #5d5d5d;
+background: none;
+}
+
+/*END foundation reset*/
+
 body{
 	background: none;
 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
@@ -159,7 +200,7 @@ body{
 }
 
 .site-phone-wrap, .search-cart-wrap{
-	padding: 20px 0
+	padding: 25px 0
 }
 
 .site-phone-number, .order-call{
@@ -167,7 +208,7 @@ body{
 }
 
 .site-phone-number{
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .phone-code{
@@ -212,4 +253,44 @@ width: 33px;
 	padding-bottom: 2px;
 	display: inline-block;
 }
+
+.site-logo-wrap{
+	padding: 5px 0;
+}
+
+.site-name-link{
+	display: inline-block;
+	margin-left: -45px;
+}
+
+.search-input-wrap{
+	position: relative;
+	overflow: hidden;
+	height: 35px;
+}
+
+.search-wrap{
+	margin-bottom: 15px;
+}
+
+.search-submit{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+right: 0;
+border: none;
+font-size: 0;
+padding: 5px;
+}
+
+.search-submit > .icon-search{
+	font-size: 15px;
+	color: #9f9f9f;
+}
+
+.search-submit:hover > .icon-search:before{
+	text-shadow: 0 0 1px #827B7B;
+}
+
+
 

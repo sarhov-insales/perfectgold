@@ -1,6 +1,92 @@
-/*html{
+/*
+html{
 	background: url('../img/pg_index.jpg') center 0 repeat #ECDFCE;
-}*/
+}
+*/
+
+
+/* LOADER */
+
+.no-js .loader{
+	display: none;
+}
+
+html.no-js{
+	overflow: visible;
+}
+
+html{
+overflow: hidden;
+}
+
+.loader{
+	position: fixed;
+	background: #000;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom:0;
+	margin: auto;
+	z-index: 9999;
+}
+
+.loader-animation{
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	text-align: center;
+	line-height: 200px;
+	/*background: #9c0;*/
+	font-size: 80px;
+	color: #ad520b;
+	animation:load 3s linear infinite;
+-moz-animation:load 3s linear infinite; /* Firefox */
+-webkit-animation:load 3s linear infinite; /* Safari and Chrome */
+-o-animation:load 3s linear infinite; /* Opera */
+}
+
+
+@keyframes load
+{
+0%,100%   {color:red;}
+25%  {color:yellow;}
+50%  {color:#ad520b;}
+75% {color:green;}
+
+}
+
+@-moz-keyframes load /* Firefox */
+{
+0%,100%   {color:red;}
+25%  {color:yellow;}
+50%  {color:#ad520b;}
+75% {color:green;}
+}
+
+@-webkit-keyframes load /* Safari and Chrome */
+{
+0%,100%   {color:red;}
+25%  {color:yellow;}
+50%  {color:#ad520b;}
+75% {color:green;}
+}
+
+@-o-keyframes load /* Opera */
+{
+0%,100%   {color:red;}
+25%  {color:yellow;}
+50%  {color:#ad520b;}
+75% {color:green;}
+}
+
+/* END LOADER */
 
 body{
 	background: none;
@@ -36,3 +122,14 @@ body{
 .top-nav-link.active{
 	color: #CACACA;
 }
+/*
+.phone-link{
+	width: 33px;
+	height: 28px;
+	display: block;
+	background: url('../img/call-order-anime.gif') 0 -32px no-repeat;
+}
+
+.phone-link:hover{
+	background-position: 0 1px;
+}*/

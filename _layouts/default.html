@@ -8,15 +8,19 @@
   <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/foundation.min.css" />
+    <link rel="stylesheet" href="http://i.icomoon.io/public/temp/bd83c6339b/perfectgold/style.css">
     <link rel="stylesheet" href="css/cssreset-min.css" />
     <link rel="stylesheet" href="css/nivo-slider.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/editor.css" />
     <script src="js/modernizr.js"></script>
 
+
 </head>
 
 <body>
+
+{% include loader.html %}
 
   <div class="off-canvas-wrap" data-offcanvas>
     <div class="inner-wrap">
@@ -25,25 +29,53 @@
 
       <section class="main-section">
        <div class="row main-inner">
-          <div class="top-nav clearfix hide-for-small-down">
-              <div class="columns small-10 ">
-                <nav class="top-nav-links clearfix">
-                  {% for i in (1..5) %}
-                    <a href="page.html" class="top-nav-link {% if forloop.index == 3 %}  active {% endif %}">пункт меню</a>
-                  {% endfor %}
-                </nav>
-                <!-- top-nav-links -->
-              </div>
-              <div class="columns small-4"></div>
-              <div class="columns small-10"></div>
-            
+        <div class="top-nav clearfix hide-for-small-down">
+          <div class="columns small-10 ">
+            <nav class="top-nav-links clearfix">
+              {% for i in (1..5) %}
+              <a href="page.html" class="top-nav-link {% if forloop.index == 3 %}  active {% endif %}">пункт меню</a>
+              {% endfor %}
+            </nav>
+            <!-- top-nav-links -->
           </div>
-          <!-- top-nav -->
-       </div>
-      </section>
+          <div class="columns small-4 text-center">
+            <a href="" class="top-bar-center js-topBarOpen">Открыть</a>
+          </div>
+          <div class="columns small-10 text-right">
+            <div class="header-links">
+
+              <a href="wisht.html" class="wish-list-link action-link">
+                <span class="wish-list--link-text action-link-text">избранное</span>
+              </a>
+              
+              <a href="wish.html" class="login-link action-link">
+                <span class="login-link-text action-link-text">вход</span>
+              </a>
+              
+              <a href="wisht.html" class="registration-link action-link">
+                <span class="registration-list-text action-link-text">регистрация</span>
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="phone">
+          <a href="#" class="phone-link">
+            
+          </a>
+        </div>
+
+
+        <!-- top-nav -->
+      </div>
+    </section>
       <a class="exit-off-canvas"></a>
     </div>
+    <!-- inner-wrap -->
   </div>
+  <!-- off-canvas-wrap -->
 
     <script src="js/jquery.min.js"></script>
     <script src="js/slider.js"></script>

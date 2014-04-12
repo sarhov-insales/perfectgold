@@ -159,3 +159,7 @@ body{
 .action-link:first-child{
 	margin-left: 0;
 }
+
+.site-info-wrap{
+	background: #fff;
+}

@@ -93,6 +93,10 @@ body{
 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
+.off-canvas-wrap,.inner-wrap,.main-section,.main-inner{
+	height: 100%;
+}
+
 .top-nav{
 	padding: 8px 0;
 	background: #ad520b;
@@ -102,6 +106,7 @@ body{
 	-webkit-box-shadow: 0 0 3px #333;
 	-moz-box-shadow: 0 0 3px #333;
 	box-shadow: 0 0 3px #333;
+	background: #fff;
 }
 
 .top-nav-links{

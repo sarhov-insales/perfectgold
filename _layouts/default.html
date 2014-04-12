@@ -24,10 +24,21 @@
       {% include mobile-nav.html %}
 
       <section class="main-section">
-       <div class="row">
-         <div class="columns small-24">
-           content goes here
-         </div>
+       <div class="row main-inner">
+          <div class="top-nav clearfix hide-for-small-down">
+              <div class="columns small-10 ">
+                <nav class="top-nav-links clearfix">
+                  {% for i in (1..5) %}
+                    <a href="page.html" class="top-nav-link {% if forloop.index == 3 %}  active {% endif %}">пункт меню</a>
+                  {% endfor %}
+                </nav>
+                <!-- top-nav-links -->
+              </div>
+              <div class="columns small-4"></div>
+              <div class="columns small-10"></div>
+            
+          </div>
+          <!-- top-nav -->
        </div>
       </section>
       <a class="exit-off-canvas"></a>

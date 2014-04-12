@@ -104,6 +104,10 @@ body{
 	box-shadow: 0 0 3px #333;
 }
 
+.top-nav-links{
+	margin-left: 10px;
+}
+
 .top-nav-link{
 	text-transform: uppercase;
 	font-size: 12px;
@@ -133,3 +137,25 @@ body{
 .phone-link:hover{
 	background-position: 0 1px;
 }*/
+
+.top-bar-center > span{
+	font-size: 21px;
+}
+
+.header-links{
+	line-height: 1.1;
+	margin-right: 10px;
+}
+
+.action-link{
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 3px 0 1px;
+	margin-left: 8%;
+	font-size: 12px;
+		white-space: nowrap;
+}
+
+.action-link:first-child{
+	margin-left: 0;
+}

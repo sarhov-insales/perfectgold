@@ -20,7 +20,7 @@
 
 <body>
 
-{% include loader.html %}
+  {% include loader.html %}
 
   <div class="off-canvas-wrap" data-offcanvas>
     <div class="inner-wrap">
@@ -29,46 +29,29 @@
 
       <section class="main-section">
        <div class="row main-inner">
-        <div class="top-nav clearfix hide-for-small-down">
-          <div class="columns small-10 ">
-            <nav class="top-nav-links clearfix">
-              {% for i in (1..5) %}
-              <a href="page.html" class="top-nav-link {% if forloop.index == 3 %}  active {% endif %}">пункт меню</a>
-              {% endfor %}
-            </nav>
-            <!-- top-nav-links -->
-          </div>
-          <div class="columns small-4 text-center">
-            <a href="" class="top-bar-center js-topBarOpen">Открыть</a>
-          </div>
-          <div class="columns small-10 text-right">
-            <div class="header-links">
 
-              <a href="wisht.html" class="wish-list-link action-link">
-                <span class="wish-list--link-text action-link-text">избранное</span>
-              </a>
-              
-              <a href="wish.html" class="login-link action-link">
-                <span class="login-link-text action-link-text">вход</span>
-              </a>
-              
-              <a href="wisht.html" class="registration-link action-link">
-                <span class="registration-list-text action-link-text">регистрация</span>
-              </a>
+      {% include top-nav.html %}
 
-            </div>
+      <div class="site-info-wrap clearfix">
+        <div class="columns small-6">
+          <div class="site-phone-wrap">
+            <a class="site-phone-number">
+              <span class="phone-code">495</span><span class="phone-text">767 - 7744</span>
+            </a>
+            <a href="#" class="order-call js-order-call">
+              заказать звонок
+            </a>
           </div>
-
         </div>
-
-        <div class="phone">
-          <a href="#" class="phone-link">
+        <div class="columns small-10">
+          <div class="site-logo-wrap">
             
-          </a>
+          </div>
         </div>
+        <div class="columns small-6"></div>
+      </div>
 
-
-        <!-- top-nav -->
+       
       </div>
     </section>
       <a class="exit-off-canvas"></a>

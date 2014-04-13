@@ -598,7 +598,7 @@ top: 40px;
 }
 
 .orbit-container .orbit-bullets li {
-    background: none repeat scroll 0 0 #5D5D5D;
+    background: none repeat scroll 0 0 #dbdbdb;
     border-radius: 0;
     cursor: pointer;
     display: inline-block;
@@ -609,7 +609,7 @@ top: 40px;
 }
 
 .orbit-container .orbit-bullets li.active{
-	background: #EFC958;
+	background: #AD520B;
 }
 
 .slider-title-wrap{

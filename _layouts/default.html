@@ -36,58 +36,9 @@
 
       {% include top-nav.html %}
 
-      <div class="site-info-wrap clearfix">
-                <div class="columns medium-24 large-10 large-push-7">
-          <div class="site-logo-wrap">
-            <h1 class="site-name text-center">
-              <a href="" class="site-name-link">
-                <img src="img/logo.png" alt="" class="site-logo">
-              </a>
-              </h1>
-          </div>
-        </div>
-        <div class="columns medium-12 large-7 large-pull-10">
-          <div class="site-phone-wrap ">
-            <a class="site-phone-number">
-              <span class="phone-code">495</span><span class="phone-text">767 - 7744</span>
-            </a>
-            <a href="#" class="order-call js-order-call">
-              заказать звонок
-            </a>
-          </div>
-        </div>
+      {% include site-info-wrap.html %}
 
-        <div class="columns medium-12 large-7">
-          <div class="search-cart-wrap">
-            <div class="search-wrap">
-              <form action="#" class="search">
-                <div class="search-input-wrap">
-                <input type="text" name="q" id="" list="products"  autocomplete="off"> 
-                <button type="submit" class="search-submit" >
-                  <span class="icon-search"></span>
-</button>
-
-<datalist id="products">
-{% for i in (1..30) %}
-  <option value="название товара {{forloop.index}}"></option>
-{% endfor %}
-</datalist> 
-              </div>
-              <!-- input-wrap -->
-              </form>
-            </div>
-            <div class="cart-wrap">
-              <a class="cart-link">
-                <span class="icon-bag"></span>
-                <span class="cart-text">Корзина</span>
-                <span class="cart-count">3</span>
-              </a>
-            </div>
-          </div>
-          <!-- search-cart-wrap -->
-        </div>
-      </div>
-
+      {% include main-menu.html %}
        
       </div>
     </section>

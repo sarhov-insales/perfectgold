@@ -3,7 +3,7 @@
 		<nav class="top-bar" data-topbar data-options="back_text: Назад">
 			<ul class="title-area">
 				<li class="name">
-					<h1><a href="#"></a>
+					<h1><a href="collection.html"></a>
 					</h1>
 				</li>
 				<li class="toggle-topbar menu-icon"><a href="#">Каталог</a>
@@ -14,13 +14,13 @@
 				<ul class="clearfix">
 			
 					</li>		{% for i in (1..6) %}
-					<li class=" {% if forloop.index == 2 %} has-dropdown {% endif %} {% if forloop.index == 1 %} active {% endif %}"> <a href="#">категория</a> 
+					<li class=" {% if forloop.index == 2 %} has-dropdown {% endif %} {% if forloop.index == 1 %} active {% endif %}"> <a href="collection.html">категория</a> 
 
 					{% if forloop.index == 2 %}
 						<ul class="dropdown">
 							{% for i in (1..5) %}
 							<li class=" {% if forloop.index == 1 %} active {% endif %}">
-								<a href="#">под категория</a>	
+								<a href="collection.html">под категория</a>	
 								
 							</li>
 						

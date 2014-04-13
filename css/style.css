@@ -510,6 +510,11 @@ padding-top: 30px;
 top: 40px;
 }
 
+.top-bar-section li.active:not(.has-form) a:hover:not(.button){
+	background: none;
+	color: #000;
+}
+
 .top-bar-section .dropdown li .dropdown{
 	padding-top: 0;
 }

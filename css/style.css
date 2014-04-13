@@ -180,6 +180,12 @@ body{
 
 .off-canvas-wrap,.inner-wrap,.main-section,.main-inner{
 	min-height: 100%;
+	height: 100%;
+}
+
+.main-inner{
+	height: auto;
+	min-height: 100%;
 }
 
 .top-nav{
@@ -700,10 +706,15 @@ text-shadow: 0 0 3px #5d5d5d;
 
 .info-link-wrap{
 	margin-bottom: 20px;
-	padding-top: 10px;
-	border-top: 1px dotted #dbdbdb;
-	border-bottom: 1px dotted #dbdbdb;
+
+
 	clear: both;
+}
+
+.info-link-inner{
+		border-top: 1px dotted #dbdbdb;	
+		padding-top: 10px;
+	border-bottom: 1px dotted #dbdbdb;
 }
 
 [class*="block-grid-"] > li{

@@ -241,6 +241,9 @@ body{
 	margin-top: 13px;
 }
 
+.tab-bar-section .top-bar-center a{
+	position: static;
+}
 
 
 

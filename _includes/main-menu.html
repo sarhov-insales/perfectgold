@@ -14,7 +14,7 @@
 				<ul class="clearfix">
 			
 					</li>		{% for i in (1..6) %}
-					<li class=" {% if forloop.index == 2 %} has-dropdown {% endif %} "> <a href="#">категория</a> 
+					<li class=" {% if forloop.index == 2 %} has-dropdown {% endif %} {% if forloop.index == 1 %} active {% endif %}"> <a href="#">категория</a> 
 
 					{% if forloop.index == 2 %}
 						<ul class="dropdown">

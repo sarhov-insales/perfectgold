@@ -698,8 +698,44 @@ text-shadow: 0 0 3px #5d5d5d;
 	margin: auto;
 }
 
+.info-link-wrap{
+	margin-bottom: 20px;
+	padding-top: 10px;
+	border-top: 1px dotted #dbdbdb;
+	border-bottom: 1px dotted #dbdbdb;
+	clear: both;
+}
 
+[class*="block-grid-"] > li{
+	padding-bottom: 10px;
+}
 
+.info-link-text{
+	text-transform: uppercase;
+	width: 145px;
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: bold;
+	font-size: 14px;
+	color: #ad520b;
+	line-height: 1.4;
+}
+
+.info-link-link span[class^="icon-"]:before{
+	display: inline-block;
+	color: #ad520b;
+	vertical-align: middle;
+	font-size: 45px;
+	margin-right: 15px;
+}
+
+.info-link-link:hover span{
+	color: #5d5d5d;
+}
+
+.info-link-link:hover span:before{
+	text-shadow: 0  0 2px  #5d5d5d;
+}
 
 
 

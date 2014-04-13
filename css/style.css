@@ -694,6 +694,10 @@ text-shadow: 0 0 3px #5d5d5d;
 	opacity: 1;
 }
 
+.orbit-container .orbit-slides-container img{
+	margin: auto;
+}
+
 
 
 
@@ -754,6 +758,13 @@ display: block;
 
 }
 
+@media only screen and (max-width: 62.500em){
+
+.slider-title-wrap{
+	width: 90%;
+}
+}
+
 @media only screen and (max-width: 56.250em){
 .top-bar-section li:not(.has-form) a:not(.button) {
   background: #fff;
@@ -778,9 +789,6 @@ display: block;
 	background-image: none;
 }*/
 
-.slider-title-wrap{
-	width: 80%;
-}
 
 .slider-title-wrap h2{
 	font-size: 40px;

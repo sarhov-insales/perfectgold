@@ -150,6 +150,7 @@ body{
 .top-nav{
 	padding: 8px 0;
 	background: #ad520b;
+	position: relative;
 }
 
 .main-inner{
@@ -182,6 +183,18 @@ body{
 	color: #CACACA;
 }
 
+.top-bar-center.js-topBarOpen {
+    bottom: 0;
+    display: block;
+    height: 20px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+}
+
 .top-bar-center > span{
 	font-size: 21px;
 }
@@ -198,6 +211,21 @@ body{
 	margin-left: 8%;
 	font-size: 12px;
 		white-space: nowrap;
+}
+
+.action-link span{
+	vertical-align: middle;
+}
+
+.action-link span[class^="icon-"]{
+	font-size: 17px;
+	vertical-align: middle;
+	margin-right: 3px;
+}
+
+.action-link:hover span[class^="icon-"]:before{
+	text-shadow: 0 0 2px #5d5d5d;
+	color: #fff;
 }
 
 .action-link:first-child{

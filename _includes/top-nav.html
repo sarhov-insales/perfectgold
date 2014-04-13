@@ -1,5 +1,5 @@
 <div class="top-nav clearfix hide-for-small-down">
-    <div class="columns small-10 ">
+    <div class="columns small-12 ">
         <nav class="top-nav-links clearfix">
             {% for i in (1..5) %}
             <a href="page.html" class="top-nav-link {% if forloop.index == 3 %}  active {% endif %}">пункт меню</a>
@@ -7,29 +7,40 @@
         </nav>
         <!-- top-nav-links -->
     </div>
-    <div class="columns small-4 text-center">
-        <a href="" class="top-bar-center js-topBarOpen">
-            <span class="icon-arrow-down4">  </span>
-              
-        </a>
-    </div>
-    <div class="columns small-10 text-right">
+
+    <div class="columns small-12 text-right">
         <div class="header-links">
 
             <a href="wisht.html" class="wish-list-link action-link">
+                <span class="icon-heart2 wish-list-icon"></span>
                 <span class="wish-list--link-text action-link-text">избранное</span>
             </a>
+            {% if client %}
 
             <a href="wish.html" class="login-link action-link">
+                <span class="icon-list login-icon"></span>
+                <span class="login-link-text action-link-text">заказы</span>
+            </a>
+            {% else %}
+            <a href="wish.html" class="login-link action-link">
+                <span class="icon-login login-icon"></span>
                 <span class="login-link-text action-link-text">вход</span>
             </a>
+            {% endif %}
+
 
             <a href="wisht.html" class="registration-link action-link">
+              <span class="icon-user registration-icon"></span>
                 <span class="registration-list-text action-link-text">регистрация</span>
             </a>
 
         </div>
     </div>
+
+    <a href="" class="top-bar-center js-topBarOpen text-center">
+        <span class="icon-arrow-down4"></span>
+
+    </a>
 
 </div>
 <!-- top-nav -->

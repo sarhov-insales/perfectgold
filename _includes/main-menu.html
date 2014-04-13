@@ -14,20 +14,14 @@
 				<ul class="clearfix">
 			
 					</li>		{% for i in (1..6) %}
-					<li class=" {% if forloop.index == 3 %} has-dropdown {% endif %} "> <a href="#">категория</a> 
+					<li class=" {% if forloop.index == 2 %} has-dropdown {% endif %} "> <a href="#">категория</a> 
 
-					{% if forloop.index == 3 %}
+					{% if forloop.index == 2 %}
 						<ul class="dropdown">
 							{% for i in (1..5) %}
-							<li class="{% if forloop.index == 3 %} has-dropdown {% endif %}">
+							<li class=" {% if forloop.index == 1 %} active {% endif %}">
 								<a href="#">под категория</a>	
-								{% if forloop.index == 3 %}
-							    <ul class="dropdown">
-							    	{% for i in (1..2) %}
-							    		<li><a href="" class="">под под категория</a></li>
-							    	{% endfor %}
-							    </ul>
-							{% endif %}
+								
 							</li>
 						
 							{% endfor %}

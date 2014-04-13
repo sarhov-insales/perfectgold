@@ -166,6 +166,16 @@ html{
 body{
 	background: none;
 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	-webkit-text-size-adjust: 100%;
+}
+
+/* iPhone, portrait & landscape. */
+@media all and (max-device-width: 480px) {
+    html,body { -webkit-text-size-adjust:none; }
+}
+/* iPad, portrait & landscape. */
+@media all and (min-device-width: 768px) and (max-device-width: 1024px) {
+    html,body { -webkit-text-size-adjust:none; }
 }
 
 .off-canvas-wrap,.inner-wrap,.main-section,.main-inner{
@@ -391,6 +401,7 @@ padding: 5px;
     min-height: 60px;
     padding-top: 7px;
     position: relative;
+    margin-bottom: 25px;
 }
 
 .main-menu-wrap:before{

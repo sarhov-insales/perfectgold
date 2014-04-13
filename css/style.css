@@ -376,4 +376,73 @@ padding: 5px;
 	text-shadow: 0 0 1px #827B7B;
 }
 
+.main-menu-wrap {
+    border-bottom: 1px solid #dbdbdb;
+    border-top: 1px solid #dbdbdb;
+}
 
+.top-bar .toggle-topbar.menu-icon a:after{
+	box-shadow: 0 10px 0 1px #ad520b, 0 16px 0 1px #ad520b, 0 22px 0 1px #ad520b;
+	width: 20px;
+}
+
+.top-bar .toggle-topbar.menu-icon a{
+	color: #423f3f;
+	  line-height: 32px;
+    padding: 0 33px 0 0;
+}
+
+
+.top-bar-section ul{
+	background: none;
+	font-size: 14px;
+}
+
+.top-bar.expanded .title-area{
+	background: #fff;
+}
+
+.top-bar{
+	background: #fff;
+}
+
+.top-bar-section .has-dropdown > a:after{
+	 border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #5D5D5D;
+}
+
+.top-bar-section .has-dropdown > a:after{
+	border-color: #5d5d5d transparent transparent transparent;
+	top: 24.5px;
+}
+
+
+.top-bar-section ul li > a{
+	background: none;
+		font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+color: #423f3f;
+text-transform: uppercase;
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+    background: none ;
+    color: #423f3f;
+    line-height: 45px;
+    padding: 0 15px;
+}
+.top-bar-section li:not(.has-form) a:not(.button) {
+    background: none;
+    line-height: 45px;
+    padding: 0 15px;
+}
+
+.top-bar-section ul li:hover:not(.has-form) > a {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  color: #000000;
+  margin-left: 5px;
+}
+
+.top-bar-section .dropdown li.title h5 a {
+  color: #000000;
+  display: block;
+  line-height: 22.5px;
+}

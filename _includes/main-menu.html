@@ -12,14 +12,31 @@
 			<section class="top-bar-section">
 				<!-- Right Nav Section -->
 				<ul class="clearfix">
-					<li class="active"><a href="#">Right Button Active</a>
-					</li>
-					<li class="has-dropdown"> <a href="#">Right Button Dropdown</a> 
+			
+					</li>		{% for i in (1..6) %}
+					<li class=" {% if forloop.index == 3 %} has-dropdown {% endif %} "> <a href="#">категория</a> 
+
+					{% if forloop.index == 3 %}
 						<ul class="dropdown">
-							<li><a href="#">First link in dropdown</a>
+							{% for i in (1..5) %}
+							<li class="{% if forloop.index == 3 %} has-dropdown {% endif %}">
+								<a href="#">под категория</a>	
+								{% if forloop.index == 3 %}
+							    <ul class="dropdown">
+							    	{% for i in (1..2) %}
+							    		<li><a href="" class="">под под категория</a></li>
+							    	{% endfor %}
+							    </ul>
+							{% endif %}
 							</li>
+						
+							{% endfor %}
 						</ul>
-					</li>
+
+					</li>		
+					{% endif %}
+
+						{% endfor %}
 				</ul>
 			</section>
 		</nav>

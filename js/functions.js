@@ -9,3 +9,6 @@ $('.js-topBarOpen').click(function(e) {
 		$('.top-hidden-box').slideToggle('400');
 })
 
+$(window).load(function() {
+    $('#slider').nivoSlider();
+});

@@ -1083,6 +1083,14 @@ img.centered{
 	padding-bottom: 30px;
 }
 
+.subscribe-block-wrap{
+	padding: 4px;
+	border: 1px solid #dbdbdb;
+}
+
+.subscribe-block-inner{
+	border: 1px solid #dbdbdb;
+}
 
 
 

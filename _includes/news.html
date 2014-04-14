@@ -1,18 +1,13 @@
 
 		<div class="news-wrap clearfix">
-			<div class="columns medium-8">
+			{% for i in (1..3) %}
+				
+		
+			<div class="columns medium-12 large-8">
 				<article class="news-item">
-					
-				</article>
+					<a style="background: url('http://goo.gl/YWpZGc') center center/cover no-repeat">
+						<h3 class="news-item-title">как сделать сюрприз любимой?</h3> 
+					</a> </article>
 			</div>
-			<div class="columns medium-8">
-				<article class="news-item">
-					
-				</article>
-			</div>
-			<div class="columns medium-8">
-				<article class="news-item">
-					
-				</article>
-			</div>
+			{% endfor %}
 		</div>

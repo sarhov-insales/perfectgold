@@ -1,6 +1,7 @@
 $(window).load(function() {
   $(".loader").fadeOut("slow");
   $('html').css('overflow', 'visible');
+  	$('.site-name').addClass('animated');
 })
 
 $('.js-topBarOpen').click(function(e) {

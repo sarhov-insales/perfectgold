@@ -1094,6 +1094,21 @@ img.centered{
 	border: 1px solid #dbdbdb;
 }
 
+.subscribe-block-title{
+	font-size: 32px;
+	color: #454444;
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+
+.subscribe-block-description{
+	font-size: 12px;
+	color: #6b6b6b;
+}
+
+.subscribe-input-wrap{
+	padding-bottom: 0;
+}
 
 
 

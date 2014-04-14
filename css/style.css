@@ -585,7 +585,7 @@ top: 40px;
 }
 
 
-.orbit-container .orbit-prev,.orbit-container .orbit-next{
+.nivo-directionNav a{
 	width: 76px;
 	height: 101px;
 	display: inline-block;
@@ -597,13 +597,13 @@ top: 40px;
 }
 
 
-.orbit-container .orbit-prev:hover,.orbit-container .orbit-next:hover{
+.nivo-directionNav a:hover{
 	background-color:rgba(94, 96, 96, 0.54);
 	
 }
 
 
-.orbit-container .orbit-next{
+.nivo-directionNav a.nivo-nextNav{
 	background-position: -75px center;
 	left: auto;
 	right: 30px;
@@ -614,14 +614,15 @@ top: 40px;
 }
 
 
-.orbit-bullets-container {
+.nivo-controlNav {
     position: absolute;
     bottom: -6px;
     right: 0;
     left: 0;
+    z-index: 9999;
 }
 
-.orbit-container .orbit-bullets li {
+.nivo-controlNav a {
     background: none repeat scroll 0 0 #dbdbdb;
     border-radius: 0;
     cursor: pointer;
@@ -630,9 +631,10 @@ top: 40px;
     height: 0.3em;
     margin-right: 6px;
     width: 3em;
+    text-indent: -9999px;
 }
 
-.orbit-container .orbit-bullets li.active{
+.nivo-controlNav a.active{
 	background: #AD520B;
 }
 
@@ -1079,8 +1081,8 @@ img.centered{
 	font-size: 12px;
 }
 
-.subscribe-wrap .sb, .subscribe-wrap .nb {
-	padding-bottom: 30px;
+.subscribe-wrap .columns {
+	padding-bottom: 15px;
 }
 
 .subscribe-block-wrap{

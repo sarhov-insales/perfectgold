@@ -1,16 +1,12 @@
 <div class="columns small-24 slider-wrap ">
-	<ul class="example-orbit-content" data-orbit>
+	<div id="slider">
 		{% for i in (1..5) %}
-		<li data-orbit-slide="headline-1">
+	
 			<a href="product.html" class="slider-item">
 				<img data-interchange="[http://lorempixel.com/500/300/fashion/{{forloop.index}}, (default)], [http://lorempixel.com/700/400/fashion/{{forloop.index}}, (medium)], [http://lorempixel.com/1300/600/fashion/{{forloop.index}}, (large)]" alt="">
 				<span class="slider-title">Далеко-далеко за словесными.</span>
 			</a>
-			<div class="slider-title-wrap hide-for-small-only">
-				<h2 class="slide-title">новая коллекция {{forloop.index}}</h2>
-				<p class="slide-description">позволь себе быть необыкновенной {{forloop.index}}</hp>
-			</div>
-		</li>
+		
 		{% endfor %}
-	</ul>
+	</div>
 </div>

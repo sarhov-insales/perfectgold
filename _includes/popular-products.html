@@ -1,46 +1,47 @@
-<div class="carousel-mod-wrapper clearfix">
-	<div class="columns small24">
-		<div class="new-products-wrap carousel-mod-wrap">
-			<div class="carousel-mod-title-wrap">
-				<h4 class="carousel-mod-title wow fadeInDown">
-					Распродажа
-				</h4>
-				<a href="collection.html" class="carousel-mod-all-link new-products-all-link ">
-					<span class="carousel-mod-all-link-text">смотреть все</span>
-					<span class="icon-uniE61B"></span>
-				</a>
-			</div>
-			<!-- carousel-mod-title-wrap -->
-			<div class="carousel-mod-items-wrap columns small-23 small-centered wow fadeInUp">
-				<div class="carousel-inner">
-				<div id="carouselPopularProducts" class="caoruse-mod-id">
-					{% for i in (1..10)  %}
+<div class="columns small24">
+	<div itemscope itemtype="http://schema.org/Product" class="new-products-wrap carousel-mod-wrap">
+		<div class="carousel-mod-title-wrap">
+			<span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+				<h4 itemprop="bestRating" class="carousel-mod-title wow fadeInDown">Распродажа</h4>
+			</span>
+			<a itemprop="url" href="collection.html" class="carousel-mod-all-link new-products-all-link ">
+				<span class="carousel-mod-all-link-text">смотреть все</span>
+				<span class="icon-uniE61B"></span>
+			</a>
+		</div>
+		<!-- carousel-mod-title-wrap -->
+		<div class="carousel-mod-items-wrap columns small-23 small-centered wow fadeInUp">
+			<div class="carousel-inner">
+				<div id="carouselPopularProducts" class="caoruse-mod-id">{% for i in (1..10) %}
 					<div class=" car-item ">
 						<article class="carousel-mod-item">
-								<a href="product.html" class="carousel-mod-img-link">
-									<img class="centered" src="https://lh4.googleusercontent.com/-YkugABQEx9Q/U0udi_w1wUI/AAAAAAAACl8/qxMdqaHtPC4/s0/product-img.png" alt="" class="carousel-mod-img-link-image">
+							<a href="product.html" class="carousel-mod-img-link">
+								<img itemprop="image" class="centered" src="https://lh4.googleusercontent.com/-YkugABQEx9Q/U0udi_w1wUI/AAAAAAAACl8/qxMdqaHtPC4/s0/product-img.png" alt="" />
+							</a>
+							<h1 class="carousel-mod-item-title">
+								<a href="product.html" class="carousel-mod-item-title-link">
+									<span itemprop="name">подвеска</span>
 								</a>
-								<h1 class="carousel-mod-item-title">
-									<a href="product.html" class="carousel-mod-item-title-link">подвеска</a>
-								</h1>
-								<div class="carousel-mod-item-sku">
-									<span class="carousel-mod-item-sku-text">модель:</span>
-									<span class="carousel-mod-item-sku-value">3023</span>
-								</div>
-								<div class="carousel-mod-item-price-wrap prices">
-									<span class="old-price ">45892 руб.</span>
-									<span class="new-price"> 35564 руб.</span>
-								</div>
-						</article>
+							</h1>
+							<div class="carousel-mod-item-sku">
+								<span class="carousel-mod-item-sku-text">модель:</span>
+								<span class="carousel-mod-item-sku-value">3023</span>
+							</div>
+							<div class="carousel-mod-item-price-wrap prices">
+								<span itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="old-price ">
+									<span itemprop="price">45892</span>руб.</span>
+									<span itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="new-price">
+										<span itemprop="price">35564</span>руб.</span>
+									</div>
+								</article>
+							</div>{% endfor %}</div>
+							<a class="carousel-buttons carousel-buttons-prev" id="carouselPopularProductsPrev" href="#">
+								<span>Назад</span>
+							</a>
+							<a class="carousel-buttons carousel-buttons_next" id="carouselPopularProductsNext" href="#">
+								<span>Вперед</span>
+							</a>
+						</div>
 					</div>
-					
-					{% endfor %}
 				</div>
-				
-				<a class="carousel-buttons carousel-buttons-prev" id="carouselPopularProductsPrev" href="#"><span>Назад</span></a>
-				<a class="carousel-buttons carousel-buttons_next" id="carouselPopularProductsNext" href="#"><span>Вперед</span></a>
 			</div>
-			</div>
-		</div>
-	</div>
-</div>

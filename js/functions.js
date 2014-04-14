@@ -26,3 +26,5 @@ $("#carouselPopularProducts").carouFredSel({
 });
 
 
+new WOW().init();
+

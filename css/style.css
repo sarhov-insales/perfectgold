@@ -1079,7 +1079,7 @@ img.centered{
 	font-size: 12px;
 }
 
-.subscribe-wrap .columns{
+.subscribe-wrap .sb, .subscribe-wrap .nb {
 	padding-bottom: 30px;
 }
 

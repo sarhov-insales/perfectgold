@@ -811,6 +811,9 @@ text-shadow: 0 0 3px #5d5d5d;
 	background: rgba(128, 116, 101, 0.69);
 }
 
+.news-item:hover{
+	border-color: #000;
+}
 
 
 

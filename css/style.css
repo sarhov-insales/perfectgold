@@ -157,6 +157,19 @@ border-color: #5d5d5d;
 background: none;
 }
 
+button.small, .button.small{
+	font-size: 12px;
+	color: #2c2c2c;
+	padding: 0.44rem .94rem;
+	text-transform: uppercase;
+}
+
+button:hover, button:focus, .button:hover, .button:focus{
+	background: none;
+	border-color: #000;
+}
+
+
 /*END foundation reset*/
 
 html{
@@ -1011,9 +1024,45 @@ img.centered{
 	vertical-align: middle;
 }
 
+.mod-title-news-box{
+	margin-bottom: 15px;
+}
 
+.subscribe-wrap{
+	margin-bottom: 300px;
+}
 
+.news-block-mod-title{
+	margin-bottom: 30px;
+}
 
+.news-block-img-link{
+	height: 200px;
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	border: 1px solid #DBDBDB;
+}
+
+.news-block-item-title{
+	margin-bottom: 15px;
+}
+
+.news-block-item-title-link{
+	font-size: 16px;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.news-block-item-descripton{
+	height: 110px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	color: #747474;
+	font-size: 12px;
+}
 
 
 

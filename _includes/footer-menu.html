@@ -9,6 +9,20 @@
 					<div class="footer-menu-box-inner">
 
 						<h6 class="foot-menu-box-title"> меню</h6>
+						
+					<ul class="footer-menu-box-inner-links">
+						{% for i in (1..7) %}
+						<li {% if forloop.index == 3 %}
+						    class="active"
+						{% endif %}>
+					
+							<a href="" class="footer-menu-box-inner-links-item">
+								<span class="icon-arrow-right3"></span>
+								меню {{forloop.index}}	
+								</a>
+							</li>
+						{% endfor %}
+					</ul>
 
 					</div>
 				</div>
@@ -27,7 +41,12 @@
 					<div class="footer-menu-box-inner footer-menu-box_about">
 
 						<h6 class="foot-menu-box-title">о компании</h6>
-
+					<div class="footer-menu-box-inner-content">
+							Изготовление эксклюзивных ювелирных 
+							изделий на заказ или мелкими сериями. 
+							Подбор товара по виду изделия, пробе, 
+							коллекции, цене и прочим параметрам
+						</div>
 					</div>
 				</div>
 				<!-- columns -->
@@ -36,7 +55,11 @@
 					<div class="footer-menu-box-inner footer-menu-box_contact">
 
 						<h6 class="foot-menu-box-title">контактная информация</h6>
-
+						<div class="footer-menu-box-inner-content">
+							326908, Россия, Москва<br>
+							ул. Ювелиров дом 101<br>
+							Телефон:  495 778-9598
+						</div>
 					</div>
 				</div>
 				<!-- columns -->
@@ -51,7 +74,17 @@
 					<div class="footer-menu-box-inner footer-menu-box_social">
 
 						<h6 class="foot-menu-box-title">присоединяйтесь</h6>
-
+						<div class="footer-menu-box-inner-soc-links">
+							<a href="#" class="footer-menu-box-inner-soc-links-item fb">
+								<span class="icon-facebook"></span>
+							</a>
+							<a href="#" class="footer-menu-box-inner-soc-links-item tw">
+								<span class="icon-twitter"></span>
+							</a>
+							<a href="#" class="footer-menu-box-inner-soc-links-item vk">
+								<span class="icon-vimeo"></span>
+							</a>
+						</div>
 					</div>
 				</div>
 
@@ -59,7 +92,12 @@
 					<div class="footer-menu-box-inner footer-menu-box_payments">
 
 						<h6 class="foot-menu-box-title">мы принимаем</h6>
-
+						<div class="footer-menu-box-inner-payments-icons">
+							<a href="#" class="footer-menu-box-inner-payments-icons-item paypal"></a>
+							<a href="#" class="footer-menu-box-inner-payments-icons-item mastercart"></a>
+							<a href="#" class="footer-menu-box-inner-payments-icons-item visa"></a>
+							<a href="#" class="footer-menu-box-inner-payments-icons-item discover"></a>
+						</div>
 					</div>
 				</div>
 				<!-- columns -->
@@ -68,3 +106,19 @@
 	</div>
 </div>
 <!-- footer-menu-wrap -->
+
+<footer class="site-main-foot clearfix">
+	<div class="columns small-24 medium-7 medium-text-left small-text-center">
+		<a href="#" class="buttom-logo-link">
+			<img src="/img/logo2.png" alt="" class="buttom-logo-link-img">
+		</a>
+	</div>
+	<div class="columns small-24 medium-17 medium-text-right small-text-center">
+		<div class="copyright">
+			<span class="copy-text">Все права принадлежат компании</span>
+			<a href="#" class="copy-link">Perfect-Gold</a>
+			<span class="copy-city">Москва </span>
+			<span class="copy-date">2014</span>
+		</div>
+	</div>
+</footer>

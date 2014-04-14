@@ -915,7 +915,7 @@ margin-bottom: 20px;
 }
 
 .carousel-mod-items-wrap{
-	position: relative;
+	position: static;
 }
 
 
@@ -938,7 +938,7 @@ img.centered{
 	position: absolute;
 	top: 50%;
 	margin-top: -30px;
-	left: -20px;
+	left: 15px;
 	width: 40px;
 	height: 60px;
 	display: block;
@@ -949,7 +949,7 @@ img.centered{
 .carousel-buttons.carousel-buttons_next{
 	left: auto;
 	background-position: -81px center;
-	right: -24px;
+	right: 15px;
 }
 
 .carousel-buttons:hover{
@@ -1028,6 +1028,10 @@ img.centered{
 	margin-bottom: 15px;
 }
 
+.mod-title-news-box h4{
+	padding-left: 0;
+}
+
 .subscribe-wrap{
 	margin-bottom: 300px;
 }
@@ -1046,12 +1050,23 @@ img.centered{
 
 .news-block-item-title{
 	margin-bottom: 15px;
+	overflow: hidden;
+	height: 23px;
+	white-space: nowrap;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
 }
 
 .news-block-item-title-link{
 	font-size: 16px;
 	color: #000;
 	text-transform: uppercase;
+}
+
+.news-block-item-title-link:hover{
+	/*font-size: 16px;*/
+	color: #5d5d5d;
+	/*text-transform: uppercase;*/
 }
 
 .news-block-item-descripton{
@@ -1062,6 +1077,10 @@ img.centered{
 	text-overflow: ellipsis;
 	color: #747474;
 	font-size: 12px;
+}
+
+.subscribe-wrap .columns{
+	padding-bottom: 30px;
 }
 
 
@@ -1103,6 +1122,10 @@ img.centered{
 display: block;
 }
 
+.carousel-mod-all-link{
+	position: static;
+	display: block;
+}
 
 .top-bar-section .dropdown{
 	padding: 0 !important;

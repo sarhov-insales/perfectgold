@@ -2,9 +2,68 @@
 layout: default
 title: Карточка товара
 ---
+<header class="product-head clearfix">
 <div class="columns small-24">
-<div class="product title-wrap">
-	<h1 class="product title"></h1>
+<div class="product title-wrap text-center">
+	<h1 class="product title">волшебное кольцо</h1>
+	<div class="next-prev-product-wrap">
+		<a href="" class="next-prev-product-link prev-product">
+			<span class="icon-arrow-left4"></span>
+			<span class="next-rev-product-link-text">предыдущая страница</span>
+		</a>
+		<a href="" class="next-prevproduct-link next-product">
+				<span class="next-rev-product-link-text">следующая страница</span>
+			<span class="icon-uniE61B"></span>
+		</a>
+	</div>
+	<!-- next-repv-product-wrap -->
 </div>
+<!-- product-title-wrap -->
 </div>
+<div class="columns small-centered small24 text-center">
+	<div class="breadcrumbs-wrap">
+		<a href="#" class="breadcrumb-item breadcrumb-item_link">главная</a>/
+		<a href="#" class="breadcrumb-item breadcrumb-item_link">каталог</a>/
+		<span class="breadcrumb-item breadcrumb-item_current"></span>
+	</div>
+</div>
+</header>
+<!-- product-header -->
 
+<section class="product-wrap clearfix">
+<div class="columns large-18">
+	<div class="row">
+
+<article class="product">
+		<div class="columns large-10 push-12">product-info</div>
+		<div class="columns large-12 medium-pull-10">product-image
+			<figure class="product-image">
+				<a href="#" class="product-image link">
+					<img src="img/product-img.jpg" alt="" class="product-image">
+				</a>
+				</figure>
+		</div>
+</article>
+<!-- product -->
+
+<section class="product-tab-wrap">
+		<div class="columns large24">tabs</div>
+</section>
+<!-- product-tab-wrap -->
+
+	</div>
+</div>
+<div class="columns large-6">
+	<div class="row">
+		<div class="columns large-24">sidebar-box</div>
+		<div class="columns large-24">sidebar-box</div>
+		<div class="columns large-24">sidebar-box</div>
+	</div>
+</div>
+</section>
+<!-- product-wrap -->
+
+<footer class="simblock clearfix">
+	{% include new-products.html %}
+</footer>
+<!-- simblock -->

@@ -1004,6 +1004,10 @@ img.centered{
 	vertical-align: middle;
 }
 
+.old-price{
+	position: relative;
+}
+
 .old-price:before{
 	content: '';
 	position: absolute;

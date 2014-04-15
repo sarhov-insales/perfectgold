@@ -33,14 +33,14 @@ title: Карточка товара
 
 <article class="product">
 		
-		<div class="columns large-12 ">
+		<div class="columns large-14 ">
 			<figure class="product-image">
 				<a href="#" class="product-image link">
 					<img src="img/product-img.jpg" alt="" class="product-image">
 				</a>
 				</figure>
 		</div>
-		<div class="columns large-10 end">
+		<div class="columns large-8 end">
 			<div class="product-info-wrap clearfix">
 				<div class="row for-property">
 					<div class="columns large-24">
@@ -63,7 +63,8 @@ title: Карточка товара
 				
 					<div class="columns large-24">
 						<div class="product-description">
-							
+							Изящное кольцо настоящего волшебника, 
+							удивляйте всех магией и красотой
 						</div>
 					</div>
 				</div>	
@@ -77,10 +78,13 @@ title: Карточка товара
 						</div>
 					</div>
 
-					<div class="size-buttons">
-						{% for i in (1..7) %}
-							<a href="#" class="size-item button small">2{{forloop.index}}</a>
+				
+						<div class="columns large-24">	
+							<div class="size-buttons">
+						{% for i in (1..6) %}
+							<a href="#" class="size-item  {% if forloop.index == 3 %} active {% endif %}">2{{forloop.index}}</a>
 						{% endfor %}
+					</div>
 					</div>
 				</div>
 				<!-- row for size and size buttons -->

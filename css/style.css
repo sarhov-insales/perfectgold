@@ -765,7 +765,7 @@ text-shadow: 0 0 3px #5d5d5d;
 }
 
 .info-link-link:hover span:before{
-	text-shadow: 0  0 2px  #5d5d5d;
+	color: #703509;
 }
 
 
@@ -1142,6 +1142,7 @@ url('../img/footer-menu-bg-top.png') center top no-repeat,
 .footer-menu-box-inner-content{
 	color: #9b9b9b;
 	font-size: 12px;
+	line-height: 1.6;
 }
 
 .footer-menu-box_contact, .footer-menu-box_payments{

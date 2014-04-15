@@ -43,7 +43,35 @@ title: Карточка товара
 				</a>
 				</figure>
 		</div>
-		<div class="columns large-10">product-info</div>
+		<div class="columns large-10 end">
+			<div class="product-info-wrap clearfix">
+				<div class="row">
+					<div class="columns large-24">
+						<div class="sku-properties-wrap clearfix">
+							<div class="sku">
+								<span class="sku-name property-name">артикул:</span>
+								<span class="sku-value property-value">3880-4</span>
+							</div>
+							<div class="properties-wrap">
+								{% for i in (1..3) %}
+									<div class="property-line">
+										<span class="property-name">свойства{{forloop.index}}:</span>
+
+										<span class="property-value">золото {{forloop.index}}</span>
+									</div>
+								{% endfor %}
+							</div>
+						</div>
+					</div>
+				
+					<div class="columns large-24">
+						<div class="product-description">
+							
+						</div>
+					</div>
+				</div>	<!-- row for sku properties -->
+			</div>
+		</div>
 </article>
 <!-- product -->
 

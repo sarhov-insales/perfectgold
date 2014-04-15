@@ -82,7 +82,7 @@ title: Карточка товара
 
 					<div class="size-buttons">
 						{% for i in (1..7) %}
-							<a href="#" class="size-item"></a>
+							<a href="#" class="size-item button"></a>
 						{% endfor %}
 					</div>
 				</div>
@@ -93,16 +93,40 @@ title: Карточка товара
 						<div class="product-quantity clearfix">
 							<span class="quantity-text left">кол-во</span>
 							<div class="quantity-form-wrap left">
-				        <div class="inc button"><span class="icon"></span></div>
-				        <div class="dec button"><span class="icon-"></span></div>
+				        <div class="inc but minus button"><span class="icon"></span></div>
+				        <div class="dec but plus button"><span class="icon-"></span></div>
         				<input type="text" name="french-hens" id="french-hens" value="1">
 							</div>
 							<!-- quantity-form-wrap -->
 						</div>
 						<!-- product-quantity -->
 					</div>
+
+					<div class="columns large-24">
+						<div class="prices"><span class="old-price">8792 руб</span>
+							<span class="new-price">6788 руб</span>
+						</div>
+					</div>
 				</div>
-				<!-- row for large -->
+				<!-- row for price -->
+
+				<div class="row">
+					<div class="buy-zone-wrap">
+					
+					<div class="columns large-24">
+						<button class="button button_buy">в корзину</button>
+					</div>
+
+					<div class="columns large-24">
+						<a href="#" class="button js-fast-order">быстрый заказ</a>
+					</div>
+
+					<a href="#" class="wish-button jsToWish">
+						<span class="icon"></span>
+					</a>
+
+					</div>
+				</div>
 
 			</div>
 		</div>

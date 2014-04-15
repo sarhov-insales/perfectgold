@@ -35,5 +35,16 @@ $(window).load(function() {
 
 
 // init for animation during scrolling
+
+
+wow = new WOW(
+{
+boxClass: 'wow', // default
+animateClass: 'animated', // default
+offset: 50 // default
+}
+)
+
+
 new WOW().init();
 

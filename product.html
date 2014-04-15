@@ -45,7 +45,7 @@ title: Карточка товара
 		</div>
 		<div class="columns large-10 end">
 			<div class="product-info-wrap clearfix">
-				<div class="row">
+				<div class="row for-property">
 					<div class="columns large-24">
 						<div class="sku-properties-wrap clearfix">
 							<div class="sku">
@@ -69,9 +69,44 @@ title: Карточка товара
 							
 						</div>
 					</div>
-				</div>	<!-- row for sku properties -->
+				</div>	
+				<!-- row for sku properties -->
+
+				<div class="row for-size">
+					<div class="columns large-24">
+						<div class="size-text-wrap clearfix">
+							<span class="size-text left">размер</span>
+							<a href="#" class="size-table right">как определить</a>
+						</div>
+					</div>
+
+					<div class="size-buttons">
+						{% for i in (1..7) %}
+							<a href="#" class="size-item"></a>
+						{% endfor %}
+					</div>
+				</div>
+				<!-- row for size and size buttons -->
+
+				<div class="row for-price">
+					<div class="columns large-24">
+						<div class="product-quantity clearfix">
+							<span class="quantity-text left">кол-во</span>
+							<div class="quantity-form-wrap left">
+				        <div class="inc button"><span class="icon"></span></div>
+				        <div class="dec button"><span class="icon-"></span></div>
+        				<input type="text" name="french-hens" id="french-hens" value="1">
+							</div>
+							<!-- quantity-form-wrap -->
+						</div>
+						<!-- product-quantity -->
+					</div>
+				</div>
+				<!-- row for large -->
+
 			</div>
 		</div>
+		<!-- large-10 product-part -->
 </article>
 <!-- product -->
 

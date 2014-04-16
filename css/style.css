@@ -1571,8 +1571,8 @@ color: #ad520b;
 	transform: scale(1.1);
 }
 
-.product-image, .product {
-    margin-bottom: 20px;
+ .product {
+    margin-bottom: 40px;
 }
 
 
@@ -1723,6 +1723,7 @@ margin-bottom: 9px;
 
 /*MEDIA*/
 
+
 @media only screen and (min-width:1024px) and (max-width: 1124px){
 	.tabs .tab-link {
 		  padding: 10px 9px 7px;
@@ -1735,6 +1736,21 @@ margin-bottom: 9px;
 
 	.tabs dd:first-child{
 		margin-left: 15px;
+	}
+}
+
+@media only screen and (min-width:641px) and (max-width: 841px){
+	.tabs .tab-link {
+		  padding: 10px 9px 7px;
+		  min-width: 80px;
+	}
+
+	.tabs dd{
+		margin-left: 13px;
+	}
+
+	.tabs dd:first-child{
+		margin-left: 13px;
 	}
 }
 
@@ -1751,6 +1767,80 @@ margin-bottom: 9px;
 
 /* Medium Displays: 641px and down */
 @media only screen and (max-width: 40.063em) {
+
+
+
+.tab-link-text.hide-for-small-only {
+    border: 1px solid #E9E9E9;
+    border-radius: 3px;
+    color: #000000;
+    font-size: 10px;
+    left: -28px;
+    padding: 3px 2px 4px;
+    position: relative;
+    text-align: center;
+    text-transform: lowercase;
+    top: -65px;
+    width: 97px;
+}
+
+.tab-link-text.hide-for-small-only:after {
+  border-color: #FFFFFF rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  border-style: solid;
+  border-width: 6px;
+  bottom: -12px;
+  content: "";
+  display: block;
+  height: 0;
+  left: 50%;
+  margin-left: -5px;
+  position: absolute;
+  width: 0;
+}
+
+
+.tab-link-text.hide-for-small-only:before {
+  border-color: #E9E9E9 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  border-style: solid;
+  border-width: 6px;
+  bottom: -13px;
+  content: "";
+  display: block;
+  height: 0;
+  left: 50%;
+  margin-left: -5px;
+  position: absolute;
+  width: 0;
+}
+
+
+
+.tabs dd.active .tab-link-text{
+	    display: block !important;
+}
+
+
+
+
+.product-image{
+	margin-bottom: 20px;
+}
+	.tabs .tab-link {
+		  padding: 17px 9px 10px;
+		  min-width: 0;
+		  width: 55px;
+		  height: 50px;
+	}
+
+	.tabs dd{
+		margin-left: 10px;
+	}
+
+	.tabs dd:first-child{
+		margin-left: 13px;
+	}
+
+
 
 .product-quantity,.prices,.button_buy, .size-buttons{
 	margin-bottom: 25px;
@@ -1808,6 +1898,76 @@ display: block;
 }
 
 }
+
+
+
+
+
+@media only screen and (max-width: 400px){
+	.columns.medium-24.small-24.tab-content-wrap {
+    margin-left: -76px;
+    padding-left: 70px;
+    top: -17px;
+}
+
+.tabs dd.active .tab-link-text{
+	    display: none !important;
+}
+
+.columns.medium-24.small-24.tab-link-wrap {
+    float: left;
+    padding-right: 0;
+    width: 76px;
+}
+
+.tabs .tab-link {
+    height: 45px;
+    min-width: 0;
+    padding: 16px 9px 10px;
+    width: 50px;
+}
+
+.tabs .tab-link{
+ border: 1px solid #e9e9e9;
+ border-bottom: none;
+}
+
+.tabs dd:last-child .tab-link{
+	border-bottom: 1px solid #e9e9e9;;
+}
+
+.tabs dd.active .tab-link {
+    border-right-color: #FFFFFF;
+}
+
+.tabs dd{
+	margin: 0 !important;
+}
+
+.tab-title-wrap.text-center {
+    margin-bottom: -18px;
+    position: relative;
+    top: -26px;
+    display: block;
+}
+
+.tab-title {
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: inline-block;
+    font-size: 12px;
+    padding: 3px 7px;
+    text-transform: uppercase;
+}
+
+
+}
+
+
+
+
+
+
+
 
 /* Large Displays: 1024px and down */
 

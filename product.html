@@ -17,7 +17,7 @@ title: Карточка товара
 </div>
 <!-- product-title-wrap -->
 </div>
-<div class="columns small-centered small24 text-center">
+<div class="columns small-centered large-uncentered small24 text-center">
 	<div class="breadcrumbs-wrap">
 		<a href="#" class="breadcrumb-item breadcrumb-item_link">главная</a>/
 		<a href="#" class="breadcrumb-item breadcrumb-item_link">каталог</a>/
@@ -28,19 +28,19 @@ title: Карточка товара
 <!-- product-header -->
 
 <section class="product-wrap clearfix">
-<div class="columns large-18">
+<div class="columns large-18 medium-24">
 	<div class="row">
 
 <article class="product">
 		
-		<div class="columns large-14 ">
+		<div class="columns large-14 medium-13 small-24">
 			<figure class="product-image">
 				<a href="#" class="product-image link">
 					<img src="img/product-img.jpg" alt="" class="product-image">
 				</a>
 				</figure>
 		</div>
-		<div class="columns large-8 end">
+		<div class="columns large-9 medium-11  small-24 end">
 			<div class="product-info-wrap clearfix">
 				<div class="row for-property">
 					<div class="columns large-24">
@@ -80,7 +80,7 @@ title: Карточка товара
 
 				
 						<div class="columns large-24">	
-							<div class="size-buttons">
+							<div class="size-buttons small-only-text-center">
 						{% for i in (1..6) %}
 							<a href="#" class="size-item  {% if forloop.index == 3 %} active {% endif %}">2{{forloop.index}}</a>
 						{% endfor %}
@@ -91,9 +91,9 @@ title: Карточка товара
 
 				<div class="row for-price">
 					<div class="columns large-24">
-						<div class="product-quantity clearfix">
-							<span class="quantity-text left">кол-во:</span>
-							<div class="quantity-form-wrap left">
+						<div class="product-quantity clearfix small-only-text-center">
+							<span class="quantity-text ">кол-во:</span>
+							<div class="quantity-form-wrap ">
 				        <div class="inc but minus quantity-button"><span class="icon-arrow-left4"></span></div>
 				       
         				<input class="product-quantity-input " type="text" name="quantity" value="1">
@@ -105,7 +105,7 @@ title: Карточка товара
 					</div>
 
 					<div class="columns large-24">
-						<div class="prices"><span class="old-price">8792 руб</span>
+						<div class="prices small-only-text-center"><span class="old-price">8792 руб</span>
 							<span class="new-price">6788 руб</span>
 						</div>
 					</div>
@@ -115,11 +115,12 @@ title: Карточка товара
 				<div class="row">
 					<div class="buy-zone-wrap clearfix">
 					
-					<div class="columns large-24">
+					<div class="columns  small-centered large-uncentered small-only-text-center large-20">
+
 						<button class="button button_buy">в корзину</button>
 					</div>
 
-					<div class="columns large-24">
+					<div class="columns small-centered large-uncentered small-only-text-center  large-24">
 						<a href="#" class="button fast-order js-fast-order">быстрый заказ</a>
 					</div>
 
@@ -143,7 +144,7 @@ title: Карточка товара
 
 	</div>
 </div>
-<div class="columns large-6">
+<div class="columns large-6 medium-24">
 	<div class="row">
 		<div class="columns large-24">sidebar-box</div>
 		<div class="columns large-24">sidebar-box</div>

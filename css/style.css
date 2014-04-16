@@ -1460,6 +1460,10 @@ color: #fff;
 	opacity: 0.7;
 }
 
+.quantity-form-wrap {
+	display: inline-block;
+}
+
 .quantity-button span[class^="icon"]{
 	font-size: 20px;
 	vertical-align: middle;
@@ -1519,10 +1523,12 @@ color: #ad520b;
 	color: #454545;
 	font-size: 18px;
 	text-transform: uppercase;
+	mb15px
 }
 
 .buy-zone-wrap{
 	position: relative;
+	width: 315px;
 }
 
 .wish-button{
@@ -1600,8 +1606,30 @@ color: #ad520b;
 
 
 @media only screen and (max-width: 40.063em) {
+
+.product-quantity,.prices,.button_buy, .size-buttons{
+	margin-bottom: 25px;
+}
+
+
+
+
 	section.top-bar-section {
 display: block;
+}
+
+.buy-zone-wrap{
+	position: relative;
+	width: auto;
+}
+
+
+
+.wish-button{
+	position: static;
+	margin: 15px auto;
+	clear: both;
+	display: block;
 }
 
 .carousel-mod-all-link{

@@ -1689,7 +1689,11 @@ margin-bottom: 9px;
 }
 
 .tabs dd{
-	margin: 0 7px;
+	margin: 0 0 0 15px;
+}
+
+.tabs dd:first-child{
+	margin-left: 20px;
 }
 
 
@@ -1719,6 +1723,21 @@ margin-bottom: 9px;
 
 /*MEDIA*/
 
+@media only screen and (min-width:1024px) and (max-width: 1124px){
+	.tabs .tab-link {
+		  padding: 10px 9px 7px;
+		  min-width: 90px;
+	}
+
+	.tabs dd{
+		margin-left: 14px;
+	}
+
+	.tabs dd:first-child{
+		margin-left: 15px;
+	}
+}
+
 
 @media only screen and (max-width: 64.063em) {
 
@@ -1737,7 +1756,10 @@ margin-bottom: 9px;
 	margin-bottom: 25px;
 }
 
-
+.product-image.link {
+    display: block;
+    text-align: center;
+}
 
 
 	section.top-bar-section {

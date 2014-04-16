@@ -1,98 +1,108 @@
 <aside class="sidebar sidebar-righ">
-<div class="columns large-6 medium-24">
-	<div class="row">
+	<div class="columns large-6 medium-24">
+		<div class="row">
 
-		<div class="columns large-24">
+			<div class="columns large-24">
 
-			<div class="sidebar-box clearfix">
-				<div class="columns small-24">
-					<div class="sidebar-box-title-wrap small-text-center medium-text-left large-text-center">
-						<h3 class="sidebar-box-title">
-							поделись
-						</h3>
+				<div class="sidebar-box clearfix">
+					<div class="columns small-24">
+						<div class="sidebar-box-title-wrap small-text-center medium-text-left large-text-center">
+							<h3 class="sidebar-box-title">
+								поделись
+							</h3>
+						</div>
 					</div>
-				</div>
-				<div class="columns small-24">
-					<div class="product-social">
-						<a href="#" class="product-social-link"><span class="icon product-social-icon"></span></a>
-						<a href="#" class="product-social-link"><span class="icon product-social-icon"></span></a>
-						<a href="#" class="product-social-link"><span class="icon product-social-icon"></span></a>
-						<a href="#" class="product-social-link"><span class="icon product-social-icon"></span></a>
-						<a href="#" class="product-social-link"><span class="icon product-social-icon"></span></a>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-
-		<div class="columns large-24">
-		
-
-			<div class="sidebar-box clearfix">
-				<div class="columns small-24 clearfix">
-					<div class="sidebar-box-title-wrap small-text-center medium-text-left large-text-center">
-						<h3 class="sidebar-box-title">
-							советуем
-							к этому товару
-						</h3>
+					<div class="columns small-24">
+						<div class="product-social small-text-center medium-text-left large-text-center">
+							<a href="#" class="product-social-link">
+								<span class="icon-facebook product-social-icon"></span>
+							</a>
+							<a href="#" class="product-social-link">
+								<span class="icon-twitter product-social-icon"></span>
+							</a>
+							<a href="#" class="product-social-link">
+								<span class="icon-envelope product-social-icon"></span>
+							</a>
+							<a href="#" class="product-social-link">
+								<span class="icon-pinterest product-social-icon"></span>
+							</a>
+							<a href="#" class="product-social-link">
+								<span class="icon-google-plus product-social-icon"></span>
+							</a>
+						</div>
 					</div>
 				</div>
 
-<div class="columns small-24">
-{% for i in (1..4) %}
-	
-
-				<div class="columns small-12 medium-6 large-12">
-					<article class="product-sidebar-item text-center">
-						<a href="product.html" class="product-sidebar-item-link">
-							<img src="img/sidebar-img{{forloop.index}}.png" alt="" class="product-sidebar-item-img centered">	</a>
-							<a class="product-sidebar-item-link-text">браслет
-“ВОЛШЕБНый”</a>
-					
-					</article>
-				</div>
-
-{% endfor %}
-</div>
 			</div>
 
-		</div>
-	
-		<div class="columns large-24">
-		
+			<div class="columns large-24">
 
-			<div class="sidebar-box clearfix">
-				<div class="columns small-24 clearfix">
-					<div class="sidebar-box-title-wrap small-text-center medium-text-left large-text-center">
-						<h3 class="sidebar-box-title">
-							советуем
-							к этому товару
-						</h3>
+
+				<div class="sidebar-box clearfix">
+					<div class="columns small-24 clearfix">
+						<div class="sidebar-box-title-wrap small-text-center medium-text-left large-text-center">
+							<h3 class="sidebar-box-title">
+								советуем к этому товару
+							</h3>
+						</div>
 					</div>
-				</div>
 
-<div class="columns small-24">
-{% for i in (1..4) %}
-	
-
-				<div class="columns small-12 medium-6 large-12">
-					<article class="product-sidebar-item text-center">
-						<a href="product.html" class="product-sidebar-item-link">
-							<img src="img/sidebar-img{{forloop.index}}.png" alt="" class="product-sidebar-item-img centered">	</a>
-							<a class="product-sidebar-item-link-text">браслет
-“ВОЛШЕБНый”</a>
-					
-					</article>
-				</div>
-
-{% endfor %}
-</div>
-			</div>
-
-		</div>
+					<div class="columns small-24">
+						{% for i in (1..4) %}
 
 
-	
-	</div>
-</div>
+						<div class="columns small-12 medium-6 large-12">
+							<article class="product-sidebar-item text-center">
+								<a href="product.html" class="product-sidebar-item-link">
+									<img src="img/sidebar-img{{forloop.index}}.png" alt="" class="product-sidebar-item-img centered">
+								</a>
+								<a class="product-sidebar-item-link-text">браслет
+									“волшебный”</a>
+
+								</article>
+							</div>
+
+							{% endfor %}
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="columns large-24">
+
+
+                <div class="sidebar-box clearfix">
+                    <div class="columns small-24 clearfix">
+                        <div class="sidebar-box-title-wrap small-text-center medium-text-left large-text-center">
+                            <h3 class="sidebar-box-title">
+                                вы смотрели
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="columns small-24">
+                        {% for i in (1..4) %}
+
+
+                        <div class="columns small-12 medium-6 large-12">
+                            <article class="product-sidebar-item text-center">
+                                <a href="product.html" class="product-sidebar-item-link">
+                                    <img src="img/sidebar-img{{forloop.index}}.png" alt="" class="product-sidebar-item-img centered">
+                                </a>
+                                <a class="product-sidebar-item-link-text">браслет
+												“волшебный”</a>
+
+                            </article>
+                        </div>
+
+                        {% endfor %}
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
 </aside>

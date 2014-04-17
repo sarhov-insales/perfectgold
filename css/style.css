@@ -1727,7 +1727,8 @@ margin-bottom: 9px;
 }
 
 .nav-sort-wrap {
-    padding-bottom: 13px;
+    min-height: 47px;
+padding-bottom: 9px;
 }
 
 label.sorting-text{

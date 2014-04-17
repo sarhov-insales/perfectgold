@@ -1870,7 +1870,7 @@ margin-bottom: 4px;
 	text-transform: uppercase;
 	color: #1c1c1c;
 	font-weight: bold;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 }
 
 .box-wrap-open{
@@ -1935,10 +1935,37 @@ vertical-align: middle;
 	border-bottom: 1px solid #ebebeb;
 }
 
-.sidebar-box{
+.left-sidebar-box{
 	margin-bottom: 25px;
 }
 
+.sidebar-box-title-property{
+	margin-bottom: 23px;
+}
+
+.property-value-item{
+	margin-bottom: 10px;
+}
+
+.property-value-link{
+	color: #3a3939;
+	font-size: 14px;
+	text-transform: capitalize;
+}
+
+
+.property-value-link:hover,
+.property-value-link:active,
+.property-value-link:focus,
+.property-value-link.active{
+
+
+	color: #ad520b;
+}
+
+.property-value-icon{
+	margin-right: 7px;
+}
 
 
 

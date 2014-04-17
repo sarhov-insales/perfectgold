@@ -18,7 +18,11 @@
 							{% for i in (1..7) %}
 							<li class="collections-item clearfix {% if forloop.index == 3 %} active {% endif %}">
 								<a href="#" class="jsOpenCollectionsSubNav right sub-nav-opener">
+ {% if forloop.index == 3 %}
+									<span class="icon-minus"></span>
+{% else %}
 									<span class="icon-add"></span>
+{% endif %}
 								</a>
 								<a href="" class="collections-item-link ">браслеты {{forloop.index}}</a>
 								{% if forloop.index == 3 %}
@@ -41,6 +45,75 @@
 				</div>
 			</div>
 			<!-- left-sidebar-box -->
+
+
+			<div class="left-sidebar-box clearfix">
+				<div class="columns large-24">
+
+					<div class="left-sidebar-box-title sidebar-box-title-property clearfix">
+						<h5 class="left-sidebar-title">
+							размер
+						</h5>
+						<a class="jsOpenSidebarInner right box-wrap-open show-for-medium-down">
+							<span class="icon-plus"></span>
+						</a>
+					</div>
+
+					<div class="left-sidebar-box-inner">
+						<div class="size-buttons small-only-text-center">{% for i in (1..6) %} <a href="#" class="size-item {% if forloop.index == 3 %} active {% endif %}">2{{forloop.index}}</a> {% endfor %}</div>
+					</div>
+					
+				</div>
+			</div>
+			<!-- left-sidebar-box -->
+
+
+			<div class="left-sidebar-box clearfix">
+				<div class="columns large-24">
+
+					<div class="left-sidebar-box-title sidebar-box-title-property clearfix">
+						<h5 class="left-sidebar-title">
+							вставка
+						</h5>
+						<a class="jsOpenSidebarInner right box-wrap-open show-for-medium-down">
+							<span class="icon-plus"></span>
+						</a>
+					</div>
+
+					<div class="left-sidebar-box-inner">
+						<ul class="property-value-list">
+							{% for i in (1..6) %}
+								
+							
+							<li class="property-value-item">
+								<a href="" class="property-value-link {% if forloop.index == 2 %} active {% endif %}">
+									{% if forloop.index == 2 %}
+									<span class="property-value-icon icon-checkbox-checked"></span>
+									{% else %}
+									<span class="property-value-icon icon-checkbox-unchecked"></span>
+									{% endif %}
+									<span class="property-value-link-text">золото</span>
+								</a>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+			<!-- left-sidebar-box -->
+
+
+
+
+
+
+
+
+
+
+
+
 		</div>
 	</aside>
 </div>

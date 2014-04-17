@@ -1,6 +1,6 @@
 --- 
 layout: default 
-title: КОрзина 
+title: Корзина 
 ---
 
 <header itemscope itemtype="http://schema.org/Product" itemref="_brand6 _image10" class="product-head clearfix">
@@ -29,97 +29,37 @@ title: КОрзина
 <section class="product-wrap clearfix">
 	<div class="columns large-18 medium-24">
 		<div class="row">
-			<article class="product clearfix">
-				<div class="columns large-14 medium-13 small-24">
-					<figure class="product-image">
-						<a href="#" class="product-image link">
-							<img id="_image10" itemprop="image" src="img/product-img.jpg" alt="" class="product-image" />
-						</a>
-					</figure>
-				</div>
-				<div class="columns large-9 medium-11 small-24 end">
-					<div class="product-info-wrap clearfix">
-						<div class="row for-property">
-							<div class="columns large-24">
-								<div class="sku-properties-wrap clearfix">
-									<div class="sku">
-										<span class="sku-name property-name">артикул:</span>
-										<span class="sku-value property-value">3880-4</span>
-									</div>
-									<div class="properties-wrap">{% for i in (1..3) %}
-										<div class="property-line">
-											<span class="property-name">свойства{{forloop.index}}:</span>
-											<span id="_brand6" itemprop="brand" itemscope itemtype="http://schema.org/Brand" class="property-value">
-												<span itemprop="name">золото</span>{{forloop.index}}</span>
-											</div>{% endfor %}</div>
-										</div>
-									</div>
-									<div itemscope itemtype="http://schema.org/Product" itemref="_offers2 _offers3" class="columns large-24">
-										<div class="product-description">Изящное кольцо настоящего
-											<span itemprop="description">волшебника</span>, удивляйте всех магией и красотой</div>
-										</div>
-									</div>
-									<!-- row for sku properties -->
-									<div class="row for-size">
-										<div class="columns large-24">
-											<div class="size-text-wrap clearfix">
-												<span class="size-text left">размер</span> <a href="#" class="size-table right">как определить</a> 
-											</div>
-										</div>
-										<div class="columns large-24">
-											<div class="size-buttons small-only-text-center">{% for i in (1..6) %} <a href="#" class="size-item {% if forloop.index == 3 %} active {% endif %}">2{{forloop.index}}</a> {% endfor %}</div>
-										</div>
-									</div>
-									<!-- row for size and size buttons -->
-									<div class="row for-price">
-										<div class="columns large-24">
-											<div class="product-quantity clearfix small-only-text-center">
-												<span class="quantity-text ">кол-во:</span>
-                                    <div class="quantity-form-wrap ">
-                                        <div class="inc but minus quantity-button">
-                                            <span class="icon-arrow-left4"></span>
-                                        </div>
-                                        <input class="product-quantity-input " type="text" name="quantity" value="1" />
-                                        <div class="dec but plus quantity-button">
-                                            <span class="icon-uniE61B"></span>
-                                        </div>
-                                    </div>
-                                    <!-- quantity-form-wrap -->
-                                </div>
-                                <!-- product-quantity -->
-                            </div>
-                            <div class="columns large-24">
-                                <div class="prices small-only-text-center">
-                                    <span id="_offers2" itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="old-price">
-                                        <span itemprop="price">8792</span>руб</span>
-                                    <span id="_offers3" itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="new-price">
-                                        <span itemprop="price">6788</span>руб</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- row for price -->
-                        <div class="row">
-                            <div class="buy-zone-wrap clearfix">
-                                <div class="columns small-centered large-uncentered small-only-text-center large-20">
-                                    <button class="button button_buy">в корзину</button>
-                                </div>
-                                <div class="columns small-centered large-uncentered small-only-text-center large-24"> <a href="#" class="button fast-order js-fast-order">быстрый заказ</a> 
-                                </div>
-                                <a href="#" class="wish-button jsToWish">
-                                    <span class="icon-heart"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- large-10 product-part -->
-            </article>
-            <!-- product -->
+		
+
+
+					<div class="cart-wrap clearfix">
+						<div class="the-cart clearfix">
+							<div class="the-cart-titles clearfix">
+								<div class="columns large-7">изделие</div>
+								<div class="columns large-3">цена</div>
+								<div class="columns large-3">кол-во </div>
+								<div class="columns large-4">стоимость</div>
+								<div class="columns large-2"></div>
+							</div>
+							<!-- cart-titles -->
+
+						<div class="cart-line clearfix">
+								<div class="columns large-7">изделие</div>
+								<div class="columns large-3">цена</div>
+								<div class="columns large-3">кол-во </div>
+								<div class="columns large-4">стоимость</div>
+								<div class="columns large-2"></div>
+						</div>
+
+						</div>
+						<!-- the-cart -->
+					</div>
+
           
 				{% include tabs.html %}
 
         </div>
-    </div>{% include right-sidebar.html %}</section>
+    </div>{% include right-sidebar-cart.html %}</section>
 <!-- product-wrap -->
 <footer class="simblock clearfix">{% include new-products.html %}</footer>
 <!-- simblock -->

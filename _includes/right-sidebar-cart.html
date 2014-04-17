@@ -2,38 +2,6 @@
 	<div class="columns large-6 medium-24">
 		<div class="row">
 
-			<div class="columns large-24">
-
-				<div class="sidebar-box clearfix">
-					<div class="columns small-24">
-						<div class="sidebar-box-title-wrap small-text-center medium-text-left large-text-center">
-							<h3 class="sidebar-box-title">
-								поделись
-							</h3>
-						</div>
-					</div>
-					<div class="columns small-24">
-						<div class="product-social small-text-center medium-text-left large-text-center">
-							<a href="#" class="product-social-link wow flipInY" >
-								<span class="icon-facebook product-social-icon"></span>
-							</a>
-							<a href="#" class="product-social-link wow flipInY" >
-								<span class="icon-twitter product-social-icon"></span>
-							</a>
-							<a href="#" class="product-social-link wow flipInY" >
-								<span class="icon-envelope product-social-icon"></span>
-							</a>
-							<a href="#" class="product-social-link wow flipInY" >
-								<span class="icon-pinterest product-social-icon"></span>
-							</a>
-							<a href="#" class="product-social-link wow flipInY" >
-								<span class="icon-google-plus product-social-icon"></span>
-							</a>
-						</div>
-					</div>
-				</div>
-
-			</div>
 
 			<div class="columns large-24">
 
@@ -42,67 +10,89 @@
 					<div class="columns small-24 clearfix">
 						<div class="sidebar-box-title-wrap small-text-center medium-text-left large-text-center">
 							<h3 class="sidebar-box-title">
-								советуем к этому товару
+								суперцена
 							</h3>
 						</div>
 					</div>
 
 					<div class="columns small-24">
-						{% for i in (1..4) %}
-
-
-						<div class="columns small-12 medium-6 large-12">
-							<article class="product-sidebar-item text-center">
-								<a href="product.html" class="product-sidebar-item-link wow pulse " >
-									<img src="img/sidebar-img{{forloop.index}}.png" alt="" class="product-sidebar-item-img centered">
-								</a>
-								<a class="product-sidebar-item-link-text">браслет
-									“волшебный”</a>
-
-								</article>
+						<!-- carousel-mod-title-wrap -->
+						<div class="carousel-mod-items-wrap columns small-23 small-centered">
+							<div class="carousel-inner">
+								<div id="carouselPopularProducts" class="carousel-mod-id">
+									{% for i in (1..10) %}
+									<div class=" car-item car-item-cart">
+										<article class="carousel-mod-item carousel-mod-item-cart">
+											<a href="product.html" class="carousel-mod-img-link">
+												<img itemprop="image" class="centered" src="https://lh4.googleusercontent.com/-YkugABQEx9Q/U0udi_w1wUI/AAAAAAAACl8/qxMdqaHtPC4/s0/product-img.png" alt="" />
+											</a>
+											<h1 class="carousel-mod-item-title">
+												<a href="product.html" class="carousel-mod-item-title-link">
+													<span itemprop="name">подвеска</span>
+												</a>
+											</h1>
+											<div class="carousel-mod-item-sku">
+												<span class="carousel-mod-item-sku-text">модель:</span>
+												<span class="carousel-mod-item-sku-value">3023</span>
+											</div>
+											<div class="carousel-mod-item-price-wrap prices">
+												<span itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="old-price ">
+													<span itemprop="price">45892</span>руб.</span>
+													<span itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="new-price">
+														<span itemprop="price">35564</span>руб.</span>
+													</div>
+												</article>
+											</div>
+											{% endfor %}
+										</div>
+											<a class="carousel-buttons carousel-buttons-prev" id="carouselPopularProductsPrev" href="#">
+												<span>Назад</span>
+											</a>
+											<a class="carousel-buttons carousel-buttons_next" id="carouselPopularProductsNext" href="#">
+												<span>Вперед</span>
+											</a>
+										</div>
+									</div>
+								</div>
 							</div>
 
-							{% endfor %}
 						</div>
-                </div>
 
-            </div>
-
-            <div class="columns large-24">
+						<div class="columns large-24">
 
 
-                <div class="sidebar-box clearfix">
-                    <div class="columns small-24 clearfix">
-                        <div class="sidebar-box-title-wrap small-text-center medium-text-left large-text-center">
-                            <h3 class="sidebar-box-title">
-                                вы смотрели
-                            </h3>
-                        </div>
-                    </div>
+							<div class="sidebar-box clearfix">
+								<div class="columns small-24 clearfix">
+									<div class="sidebar-box-title-wrap small-text-center medium-text-left large-text-center">
+										<h3 class="sidebar-box-title">
+											вы смотрели
+										</h3>
+									</div>
+								</div>
 
-                    <div class="columns small-24">
-                        {% for i in (1..4) %}
+								<div class="columns small-24">
+									{% for i in (1..4) %}
 
 
-                        <div class="columns small-12 medium-6 large-12">
-                            <article class="product-sidebar-item text-center">
-                                <a href="product.html" class="product-sidebar-item-link wow pulse" >
-                                    <img src="img/sidebar-img{{forloop.index}}.png" alt="" class="product-sidebar-item-img centered">
-                                </a>
-                                <a class="product-sidebar-item-link-text">браслет
-										“волшебный”</a>
+									<div class="columns small-12 medium-6 large-12">
+										<article class="product-sidebar-item text-center">
+											<a href="product.html" class="product-sidebar-item-link wow pulse">
+												<img src="img/sidebar-img{{forloop.index}}.png" alt="" class="product-sidebar-item-img centered">
+											</a>
+											<a class="product-sidebar-item-link-text">браслет
+												“волшебный”</a>
 
-                            </article>
-                        </div>
+											</article>
+										</div>
 
-                        {% endfor %}
-                    </div>
-                </div>
+										{% endfor %}
+									</div>
+								</div>
 
-            </div>
+							</div>
 
 
 
-        </div>
-    </div>
-</aside>
+						</div>
+					</div>
+				</aside>

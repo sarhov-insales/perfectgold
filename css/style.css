@@ -217,7 +217,6 @@ body{
 .top-nav-link{
 	text-transform: uppercase;
 	font-size: 12px;
-	font-weight: bold;
 	margin-right: 10px;
 	white-space: nowrap;
 	margin-bottom: 1px;
@@ -269,7 +268,6 @@ body{
 
 .action-link{
 	text-transform: uppercase;
-	font-weight: bold;
 	padding: 3px 0 1px;
 	margin-left: 8%;
 	font-size: 12px;

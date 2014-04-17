@@ -2064,12 +2064,16 @@ vertical-align: middle;
 	clear: both;
 }
 
+.catalog-img {
+	margin-bottom: 15px;
+}
+
 }
 
 /* Medium Displays: 641px and down */
 @media only screen and (max-width: 40.063em) {
 
-.sorting-wrap{
+.sorting-wrap {
 	margin-bottom: 15px;
 }
 

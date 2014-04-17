@@ -359,7 +359,7 @@ width: 33px;
 .cart-link{
 	color: #5d5d5d;
 	text-transform: uppercase;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	/*margin-right: 5px;*/
 }
 

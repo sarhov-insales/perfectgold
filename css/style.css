@@ -1783,14 +1783,34 @@ select:hover{
 	height: 330px;
 	width: 100%;
 
-	background: #cde;
+
 }
 
 .fd-catalog-grid-item-wrap{
-		border-top: 1px solid #ebebeb;
+		border-top: 1px solid #ebebeb;position: relative;
 	border-bottom: 1px solid #ebebeb;
 	margin-bottom: 40px;
+
 }
+
+.grid-item-new-price{
+	font-size: 14px;
+	color: #ad520b;
+	font-weight: bold;
+	margin-left: 5px;
+}
+
+.grid-item-old-price{
+	font-size: 12px;
+	color: #727272;
+	font-weight: bold;
+	margin-right: 5px;
+}
+
+.grid-item-sku{
+	margin-bottom: 10px;
+}
+
 
 .grid-item-img-link{
 	position: relative;
@@ -1799,21 +1819,34 @@ select:hover{
 	background: #9c0;
 	background: #fff;
 	margin-bottom: 30px;
+	overflow: hidden;
 }
 
 .grid-item-title{
-	height: 30px;
+	height: 20px;
 	overflow: hidden;
 	-ms-text-overflow: ellipsis;
 	text-overflow: ellipsis;
-	margin-bottom: 4px;
+margin-bottom: 4px;
+	line-height: 1;
+
 }
+
+.grid-item-title-link:hover, .grid-item-title-link:active, .grid-item-title-link:focus{
+	color: #767676;
+} 
 
 .grid-item-title-link{
 	text-transform: uppercase;
 	font-size: 14px;
 	color: #000;
 	font-weight: bold;
+}
+
+.grid-item-sku{
+	text-transform: uppercase;
+	color: #767676;
+	font-size: 12px;
 }
 
 

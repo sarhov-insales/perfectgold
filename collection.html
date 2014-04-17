@@ -31,31 +31,42 @@ title: Каталог
 {% include nav-sort.html %}
 
 				<section class="catalog-grid-wrap clearfix">
-					<div class="row">{% for i in (1..20) %}
+					<div class="row">
+
+<div class="columns small-24">
+						{% for i in (1..20) %}
 						<div class="columns large-6 small-12 medium-8 fd-catalog-grid-item-wrap">
 							
-								<article class="catalog-grid-item">
+<article class="catalog-grid-item">
+
+
+
+
 									<a href="#" class="grid-item-img-link">
 										<img src="img/grid-img.png" alt="" class="centered grid-item-img grid-item-img1">
 									</a>
 
-									<h1 class="grit-item-title text-center">
+									<h1 class="grid-item-title text-center">
 										<a href="#" class="grid-item-title-link">подвеска</a>
 									</h1>
 
 									<div class="grid-item-sku text-center">
 										<span class="grid-item-sku-name">модел: </span>
 										<span class="grid-item-sku-value">30235</span>
+															</div>
 										<div class="grid-item-price-wrap text-center">
-											<span class="old-price gird-item-old-price">47896 руб </span>
-											<span class="new-price grid-item-news-price">36547 руб</span>
+											<span class="old-price grid-item-old-price">47896 руб </span>
+											<span class="new-price grid-item-new-price">36547 руб</span>
 										</div>
-									</div>
+				
+
+
+
 								</article>
-							
-							
+
 						</div>
 						{% endfor %}
+						</div>
 					</div>
 				</section>
 

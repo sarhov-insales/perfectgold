@@ -1795,14 +1795,26 @@ select:hover{
 .grid-item-img-link{
 	position: relative;
 	display: block;
-	height: 180px;
+	height: 190px;
 	background: #9c0;
-	margin-bottom: 20px;
+	background: #fff;
+	margin-bottom: 30px;
 }
 
+.grid-item-title{
+	height: 30px;
+	overflow: hidden;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	margin-bottom: 4px;
+}
 
-
-
+.grid-item-title-link{
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+}
 
 
 

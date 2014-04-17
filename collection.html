@@ -25,38 +25,34 @@ title: Каталог
 <section class="catalog-wrap clearfix">
 	<div class="columns small-24 ">
 		<div class="row">
-		<div class="columns medium-13 medium-push-11 large-17 large-push-7">
+		<div class="columns small-24  large-18 large-push-6">
 			<main class="catalog clearfix">
-				<div class="nav-sort-wrap clearifx">
-					<div class="row">
-						<div class="columns large-12">
-							<div class="sroting-wrap">
 
-								<label for="productSorting" class="hide-for-medium-only sorting-text">сортировать по</label>
-								<select name="" id="productSorting" class="sorting-input">
-									<option value="">по цене 01</option>
-									<option value="">по цене 02</option>
-									<option value="">по цене 03</option>
-									<option value="">по цене 04</option>
-									<option value="">по цене 05</option>
-									<option value="">по цене 06</option>
-								</select>
-							</div>
-						</div>
-						<!-- columns for sorting -->
-						<div class="columms large-12">
+{% include nav-sort.html %}
+
+				<section class="catalog-grid-wrap clearfix">
+					<div class="row">{% for i in (1..20) %}
+						<div class="columns large-6 small-12 medium-8 fd-catalog-grid-item-wrap">
+							
+								<article class="catalog-grid-item">
+									<a href="#" class="grid-item-img-link">
+										<img src="img/grid-img.png" alt="" class="centered grid-item-img grid-item-img1">
+									</a>
+								</article>
+							
 							
 						</div>
-						<!-- columns for pagination (nav) -->
+						{% endfor %}
 					</div>
-				</div>
-				<!-- nav-sort-wrap -->
+				</section>
+
+				{% include nav-sort.html %}
 
 			</main>
 		</div>
 		<!-- columns for collection-items -->
 
-		<div class="columns medium-11 medium-pull-13 large-7 large-pull-17">
+		<div class="columns small-24 large-6 large-pull-18">
 			<aside class="right-sidebar clearfix">
 				right sidebar
 			</aside>

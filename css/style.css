@@ -1715,8 +1715,6 @@ margin-bottom: 9px;
 
 .catalog{
 	width: 100%;
-	height: 400px;
-	background: #9c0;
 }
 
 .right-sidebar{
@@ -1725,17 +1723,35 @@ margin-bottom: 9px;
 	height: 200px;
 }
 
+.sorting-wrap, .navigation-wrap, .nav-sort-wrap, .catalog-grid-wrap{
+	margin-bottom: 15px;
+}
 
-.sorting-text{
-	display: inline-block;
-	width: auto;
-	margin-right: 10px;
+
+label.sorting-text{
+	display: inline-block !important;
+	margin-right: 15px;
 	vertical-align: middle;
+	font-size: 12px;
+	color: #4b4b4b ;
+
 }
 
 select{
 	border: 1px solid #dddddd;
-	background-image: url();
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFAQMAAACtnVQoAAAABlBMVEUAAADd3d3swgqXAAAAAXRSTlMAQObYZgAAABdJREFUCNdj+N/AUM/AYMfAIMPAwMEAAByCAmHsSri4AAAAAElFTkSuQmCC');
+	padding: 10px 14px 10px 5px;
+	color: #717171;
+	font-size: 12px;
+	  background-position: 95% center;
+	  max-width: 170px;	width: 100% !important;
+	  min-height: 38px;
+	  margin: 0;
+	  background-color: #fff;
+}
+
+select:hover{
+	background-color: #fff;
 }
 
 .sorting-input{
@@ -1744,6 +1760,45 @@ select{
 	vertical-align: middle;
 }
 
+.nav-link{
+	vertical-align: middle;
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	text-align: center;
+	line-height: 28px;
+	margin-bottom: 3px;
+	margin-left: 1px;
+	border: 1px solid #e2e2e2;
+	color: #4b4b4b;
+}
+
+.nav-link.active, .nav-link:hover, .nav-link:focus{
+	border-color: #87642c;
+	color: #4b4b4b;
+
+}
+
+.catalog-grid-item{
+	height: 330px;
+	width: 100%;
+
+	background: #cde;
+}
+
+.fd-catalog-grid-item-wrap{
+		border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+	margin-bottom: 40px;
+}
+
+.grid-item-img-link{
+	position: relative;
+	display: block;
+	height: 180px;
+	background: #9c0;
+	margin-bottom: 20px;
+}
 
 
 
@@ -1790,12 +1845,25 @@ select{
 
 /*MEDIA*/
 
+/*hide for x-small*/
+
+@media  only screen  and (max-width:340px){
+	label.hide-for-x-small, .hide-for-x-small{
+	display: none !important;
+}
+}
+
 
 @media only screen and (min-width:1024px) and (max-width: 1124px){
 	.tabs .tab-link {
 		  padding: 10px 9px 7px;
 		  min-width: 90px;
 	}
+
+
+.fd-catalog-grid-item-wrap{
+	width: 33.33%;
+}
 
 	.tabs dd{
 		margin-left: 14px;
@@ -1971,6 +2039,13 @@ display: block;
 
 
 @media only screen and (max-width: 400px){
+
+
+.fd-catalog-grid-item-wrap{
+	width: 100%;
+	float: none;
+}
+
 	.columns.medium-24.small-24.tab-content-wrap {
     margin-left: -76px;
     padding-left: 70px;

@@ -1799,7 +1799,7 @@ select:hover{
 }
 
 .fd-catalog-grid-item-wrap{
-
+padding: 0 10px;
 	margin-bottom: 30px;
 }
 

@@ -97,12 +97,12 @@ display: inline-block;
 }
 
 .column, .columns{
-	padding-right: 1.3em;
-	padding-left: 1.3em;
+	padding-right: 2em;
+	padding-left: 2em;
 }
 
 .row .row {
-    margin: 0 -1.3em;
+    margin: 0 -2em;
     max-width: none;
     width: auto;
 }

@@ -29,37 +29,102 @@ title: Корзина
 <section class="product-wrap clearfix">
 	<div class="columns large-18 medium-24">
 		<div class="row">
-		
 
 
-					<div class="cart-wrap clearfix">
-						<div class="the-cart clearfix">
-							<div class="the-cart-titles clearfix">
-								<div class="columns large-7">изделие</div>
-								<div class="columns large-3">цена</div>
-								<div class="columns large-3">кол-во </div>
-								<div class="columns large-4">стоимость</div>
-								<div class="columns large-2"></div>
+
+			<div class="cart-wrap clearfix">
+				<div class="the-cart clearfix">
+					<div class="the-cart-titles clearfix">
+						<div class="columns medium-9">
+							<span class="cart-title-header">
+								изделие
+							</span>
+						</div>
+						<div class="columns medium-4">
+							<div>
+								<span class="cart-title-header text-center">цена</span>
 							</div>
-							<!-- cart-titles -->
+						</div>
+						<div class="columns medium-5">
+							<div>
+								<span class="cart-title-header text-center">кол-во</span>
+							</div>
+						</div>
+						<div class="columns medium-4 text-center">
+							<div>
+								<span class="cart-title-header">стоимость</span>
+							</div>
+						</div>
+						<div class="columns medium-2"></div>
+					</div>
+					<!-- cart-titles -->
 
-						<div class="cart-line clearfix">
-								<div class="columns large-7">изделие</div>
-								<div class="columns large-3">цена</div>
-								<div class="columns large-3">кол-во </div>
-								<div class="columns large-4">стоимость</div>
-								<div class="columns large-2"></div>
+					<div class="cart-line clearfix">
+						<div class="columns medium-9">
+							<div class="row">
+
+								<div class="columns medium-centered large-uncentered medium-8">
+									<figure class="cart-img-wrap">
+										<a href="product.html" class="cart-img-link">
+											<img src="img/cart-img.png" alt="" class="centered">
+										</a>
+									</figure>
+								</div>
+								<div class="columns large-16 cart-title-part small-text-center large-text-left">
+									<h1 class="cart-item-title">
+										<a href="product.html" class="cart-item-title-link">Колечко “ВОЛШЕБНое”</a>
+									</h1>
+
+									<div class="cart-sku-wrap">
+										<span class="cart-sku">артикул: 2999-3</span>
+									</div>
+
+								</div>
+
+							</div>
 						</div>
 
+						<div class="columns medium-4 text-center">
+							<div class="row">
+								<div class="columns medium-24 cart-price-part">
+									<span class="cart-price">12 999 руб</span>
+								</div>
+							</div>
 						</div>
-						<!-- the-cart -->
+
+						<div class="columns medium-5 text-center">
+							<div class="row">
+								<div class="columns medium-24 cart-quantity-part">
+									<div class="product-quantity clearfix small-only-text-center">
+										<span class="quantity-text "></span>
+										<div class="quantity-form-wrap ">
+											<div class="inc but minus quantity-button">
+												<span class="icon-arrow-left4"></span>
+											</div>
+											<input class="product-quantity-input " type="text" name="quantity" value="1" />
+											<div class="dec but plus quantity-button">
+												<span class="icon-uniE61B"></span>
+											</div>
+										</div>
+										<!-- quantity-form-wrap -->
+									</div>
+									<!-- product-quantity -->
+								</div>
+							</div>
+						</div>
+						<div class="columns large-4">стоимость</div>
+						<div class="columns large-2"></div>
 					</div>
 
-          
-				{% include tabs.html %}
+				</div>
+				<!-- the-cart -->
+			</div>
 
-        </div>
-    </div>{% include right-sidebar-cart.html %}</section>
-<!-- product-wrap -->
-<footer class="simblock clearfix">{% include new-products.html %}</footer>
-<!-- simblock -->
+
+			{% include tabs.html %}
+
+		</div>
+	</div>{% include right-sidebar-cart.html %}</section>
+	<!-- product-wrap -->
+	<footer class="simblock clearfix">{% include new-products.html %}</footer>
+	<!-- simblock -->

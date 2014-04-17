@@ -1,7 +1,36 @@
+<div class="columns small-24 large-6 large-pull-18">
+	<aside class="left-sidebar clearfix">
+		<div class="row">
+			<div class="left-sidebar-box">
+				<div class="columns large-24">
 
-		<div class="columns small-24 large-6 large-pull-18">
-			<aside class="left-sidebar clearfix">
-				right sidebar
-			</aside>
+					<div class="left-sidebar-box-title clearfix">
+						<h5 class="left-sidebar-title">
+							каталог
+						</h5>
+						<a class="jsOpenSidebarInner right box-wrap-open show-for-medium-down">
+							<span class="icon-plus"></span>
+						</a>
+					</div>
+
+					<div class="left-sidebar-box-inner">
+						<ul class="collections">
+							{% for i in (1..7) %}
+							<li class="collections-item clearfix {% if forlooop.index == 3 %} active {% endif %}">
+								<a href="#" class="jsOpenCollectionsSubNav right sub-nav-opener">
+									<span class="icon-add"></span>
+								</a>
+								<a href="" class="collections-item-link ">браслеты {{forloop.index}}</a>
+
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+			<!-- left-sidebar-box -->
 		</div>
-		<!-- columns for left-sidebar -->
+	</aside>
+</div>
+<!-- columns for left-sidebar -->

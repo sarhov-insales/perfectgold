@@ -1901,6 +1901,10 @@ line-height: 1;
 width: 25px;
 }
 
+.collections-item.active > .collections-item-link, .collections-item .collections-item-link:hover, .collections-item .collections-item-link:active, .collections-item a:focus{
+	color: #ad520b;
+}
+
 
 
 

@@ -16,12 +16,12 @@
 					<div class="left-sidebar-box-inner">
 						<ul class="collections">
 							{% for i in (1..7) %}
-							<li class="collections-item clearfix {% if forlooop.index == 3 %} active {% endif %}">
+							<li class="collections-item clearfix {% if forloop.index == 3 %} active {% endif %}">
 								<a href="#" class="jsOpenCollectionsSubNav right sub-nav-opener">
 									<span class="icon-add"></span>
 								</a>
 								<a href="" class="collections-item-link ">браслеты {{forloop.index}}</a>
-
+								
 							</li>
 							{% endfor %}
 						</ul>

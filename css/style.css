@@ -88,6 +88,10 @@ overflow: hidden;
 
 /*foundation overrides*/
 
+.row{
+	max-width: 76.875em;
+}
+
 	section.top-bar-section {
 display: inline-block;
 }

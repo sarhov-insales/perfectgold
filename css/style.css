@@ -202,7 +202,7 @@ body{
 }
 
 .top-nav{
-	padding: 8px 0;
+	padding: 7px 0;
 	background: #ad520b;
 	position: relative;
 }
@@ -221,7 +221,7 @@ body{
 .top-nav-link{
 	text-transform: uppercase;
 	font-size: 12px;
-	margin-right: 10px;
+	margin-right: 14px;
 	white-space: nowrap;
 	margin-bottom: 1px;
 	display: block;
@@ -272,18 +272,18 @@ body{
 
 .action-link{
 	text-transform: uppercase;
-	padding: 3px 0 1px;
-	margin-left: 8%;
+	margin-left: 7%;
 	font-size: 12px;
 		white-space: nowrap;
 }
 
 .action-link span{
 	vertical-align: middle;
+	line-height: 1.2;
 }
 
 .action-link span[class^="icon-"]{
-	font-size: 17px;
+	font-size: 18px;
 	vertical-align: middle;
 	margin-right: 3px;
 }
@@ -833,6 +833,11 @@ text-shadow: 0 0 3px #5d5d5d;
 	clear: both;
 }
 
+.carousel-mod-wrap {
+    padding-top: 45px;
+}
+
+
 .carousel-mod-all-link-text{
 	text-transform: uppercase;
 	font-size: 12px;
@@ -894,7 +899,7 @@ text-shadow: 0 0 3px #5d5d5d;
 
 .car-item{
 	float: left;
-	width: 280px;
+	width: 260px;
 	height: 410px;
 	margin-right: 10px;
 }
@@ -938,7 +943,7 @@ img.centered{
 	position: absolute;
 	top: 50%;
 	margin-top: -30px;
-	left: -17px;
+	left: -20px;
 	width: 40px;
 	height: 60px;
 	display: block;
@@ -949,7 +954,7 @@ img.centered{
 .carousel-buttons.carousel-buttons_next{
 	left: auto;
 	background-position: -81px center;
-	right: -17px;
+	right: -20px;
 }
 
 .carousel-buttons:hover{

@@ -418,12 +418,12 @@ padding: 5px;
 }
 
 .main-menu-wrap {
-    border-bottom: 1px solid #DBDBDB;
-    border-top: 1px solid #DBDBDB;
-    min-height: 60px;
-    padding-top: 7px;
-    position: relative;
-    margin-bottom: 30px;
+border-bottom: 1px solid #DBDBDB;
+border-top: 1px solid #DBDBDB;
+margin-bottom: 30px;
+min-height: 48px;
+padding-top: 0;
+position: relative;
 }
 
 .main-menu-wrap:before{
@@ -540,7 +540,7 @@ top: 40px;
     left: 50%;
     margin-left: -10px;
     position: absolute;
-    bottom: -30px;
+    bottom: -25px;
 }
 
 .has-dropdown:hover:after {
@@ -551,7 +551,7 @@ top: 40px;
     left: 50%;
     margin-left: -10px;
     position: absolute;
-    bottom: -29px;
+    bottom: -24px;
     z-index: 999;
 }
 

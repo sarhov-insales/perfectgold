@@ -422,7 +422,7 @@ border-bottom: 1px solid #DBDBDB;
 border-top: 1px solid #DBDBDB;
 margin-bottom: 30px;
 min-height: 48px;
-padding-top: 0;
+padding-top: 1px;
 position: relative;
 }
 
@@ -2185,6 +2185,120 @@ padding-top: 42px;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px){
+
+	.phone-text{
+	font-size:24px;
+}
+
+.phone-code {
+  font-size: 18px;
+  margin-top: 1px;
+}
+
+.site-logo-wrap{
+	padding: 15px 0;
+}
+
+.order-call{
+	font-size: 14px;
+}
+
+.order-call:before{
+	margin-right: 0;
+}
+
+.site-name {
+	height: 80px;
+}
+
+.site-name a{
+	height: 100%;
+	display: block;
+}
+
+.site-name a img{
+	max-height: 100%;
+}
+
+}
+
+
+
+
+@media only screen and (max-width: 900px){
+
+
+
+
+
+}
+
+
+
+
+@media only screen and (max-width: 800px){
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 64.063em) {
 
 .news-wrap .columns:last-child{
@@ -2196,6 +2310,8 @@ padding-top: 42px;
 .catalog-img {
 	margin-bottom: 15px;
 }
+
+
 
 
 /*part centering*/
@@ -2223,7 +2339,7 @@ padding-top: 42px;
 
 }
 
-/* Medium Displays: 641px and down */
+/* small Displays: 641px and down */
 @media only screen and (max-width: 40.063em) {
 
 	.nivo-directionNav{

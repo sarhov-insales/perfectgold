@@ -344,7 +344,10 @@ vertical-align: baseline;
 width: 33px;
 }
 
-.order-call:hover:before{
+.order-call:hover:before,
+.order-call:active:before,
+.order-call:focus:before
+{
 	background-position: 0 1px;
 }
 
@@ -2253,6 +2256,8 @@ padding-top: 42px;
 
 .order-call{
 	font-size: 14px;
+	position: relative;
+	top: 12px;
 }
 
 .order-call:before{
@@ -2290,10 +2295,61 @@ padding-top: 42px;
 
 
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 780px){
+
+.site-phone-wrap {
+    padding: 41px 0 20px;
+}
+
+.order-call {
+  font-size: 10px;
+  top: 0;
+}
+
+.phone-code {
+  font-size: 13px;
+  margin-top: 1px;
+}
+
+.phone-text {
+  font-size: 22px;
+      margin-left: 5px;
+}
+
+.site-phone-number {
+  margin-bottom: 10px;
+  position: relative;
+  top: -10px;
+}
+
+}
 
 
+@media only screen and (max-width: 700px){
 
+.site-phone-wrap {
+    padding: 41px 0 20px;
+}
+
+.order-call {
+  font-size: 10px;
+  top: 0;
+}
+
+.phone-code {
+  font-size: 13px;
+  margin-top: 1px;
+}
+
+.phone-text {
+  font-size: 18px;
+}
+
+.site-phone-number {
+  margin-bottom: 10px;
+  position: relative;
+  top: -10px;
+}
 
 }
 

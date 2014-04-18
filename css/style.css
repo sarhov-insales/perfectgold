@@ -382,6 +382,12 @@ width: 33px;
 .site-logo-wrap{
 	padding: 5px 0;
 }
+
+#site-name{
+	padding: 0;
+}
+
+
 /*
 .site-name-link{
 	display: inline-block;
@@ -2253,10 +2259,12 @@ padding-top: 42px;
 
 
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 850px){
 
 
-
+.order-call {
+  font-size: 12px;
+}
 
 
 }

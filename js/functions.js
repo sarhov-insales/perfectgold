@@ -45,6 +45,8 @@ offset: 0 // default
 
 new WOW().init();
 
+
+
 // quantity for product
 $(document).ready(function() {
 	
@@ -56,7 +58,7 @@ $(".but").on("click", function() {
   if ($button.hasClass('plus')) {
 	  var newVal = parseFloat(oldValue) + 1;
 	} else {
-   // Don't allow decrementing below zero
+   
     if (oldValue > 1) {
       var newVal = parseFloat(oldValue) - 1;
     } else {

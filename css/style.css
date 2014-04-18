@@ -1826,6 +1826,10 @@ select:hover{
 		.news-item{
 			margin-bottom: 20px;
 		}
+
+		.news-wrap{
+			padding-bottom: 10px;
+		}
 		.top-nav-link{
 			font-size: 10px;
 			margin-right: 6px;

@@ -69,4 +69,12 @@ $(".but").on("click", function() {
 });
 });
 
+//remove animation on mobile devices
 
+$(document).ready(function() {
+  
+    if ($(window).width() < 641) {
+        $('.wow').removeClass('wow');
+    }
+
+});

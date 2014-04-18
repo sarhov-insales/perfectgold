@@ -2327,12 +2327,23 @@ padding-top: 42px;
 
 @media only screen and (max-width: 700px){
 
+	.top-nav-links{
+		overflow: hidden;	
+		white-space: nowrap;
+	}
+
+	.top-nav-link {
+		display: inline-block;
+	
+		float: none;
+	}
+
 .site-phone-wrap {
     padding: 41px 0 20px;
 }
 
 .order-call {
-  font-size: 10px;
+  font-size: 8px;
   top: 0;
 }
 
@@ -2351,6 +2362,59 @@ padding-top: 42px;
   top: -10px;
 }
 
+.cart-link {
+    font-size: 13px;
+}
+
+}
+
+
+@media only screen and (max-width: 641px){
+
+
+
+.site-phone-wrap {
+    padding: 15px 0 10px;
+}
+
+.order-call {
+  font-size: 14px;
+  top: 0;
+}
+
+.phone-code {
+  font-size: 22px;
+  margin-top: 1px;
+}
+
+.phone-text {
+  font-size: 27px;
+}
+
+.site-phone-number {
+  margin-bottom: 10px;
+  position: relative;
+  top: -10px;
+}
+
+.cart-link {
+    font-size: 14px;
+}
+
+.cart-wrap{
+	text-align: left !important;
+}
+
+.search-wrap{
+	margin-bottom: 20px;
+}
+
+.search-cart-wrap{
+	padding: 15px 0;
+}
+
+.site-logo-wrap.row{
+	margin: 0;
 }
 
 
@@ -2397,6 +2461,10 @@ padding-top: 42px;
 	margin-bottom: 20px;
 }
 
+.top-nav-link{
+	font-size: 10px;
+	margin-right: 7px;
+}
 
 
 

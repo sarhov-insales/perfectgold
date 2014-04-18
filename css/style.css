@@ -752,6 +752,16 @@ text-shadow: 0 0 3px #5d5d5d;
 	line-height: 1.4;
 }
 
+.info-link-list li{
+	float: left;
+	width: 20%;
+	margin-bottom: 10px;
+}
+
+.info-link-list li:last-child .info-link-text{
+	width: 105px;
+}
+
 .info-link-link span[class^="icon-"]:before{
 	display: inline-block;
 	color: #ad520b;

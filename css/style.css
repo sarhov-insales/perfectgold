@@ -1277,7 +1277,8 @@ color: #fff;
 
 
 .site-main-foot{
-	padding: 10px 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	background: #404040;
 }
 

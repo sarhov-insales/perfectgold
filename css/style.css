@@ -794,6 +794,7 @@ padding-bottom: 30px;
 .carousel-mod-title-wrap{
 	text-align: center;
 	position: relative;
+	margin-bottom: 30px;
 }
 .carousel-mod-title-wrap:before {
 	content: '';

@@ -1713,7 +1713,11 @@ select:hover{
 	height: 100%;
 }
 .the-cart-wrap {
-	margin-bottom: 50px;
+	margin-bottom: 30px;
+}
+
+.the-cart{
+	margin-bottom: 30px;
 }
 .cart-img-link{
 	display: block;
@@ -1798,6 +1802,147 @@ select:hover{
 	padding-top: 42px;
 }
 /*end part*/
+
+.cart-footer-wrap{
+	
+	clear: both;
+}
+
+.coupon-wrap{
+	border: 1px solid #dbdbdb;
+}
+
+.button_cart_submit{
+	width: 100%;
+	padding: 15px 0;
+	margin-top: 30px !important;
+}
+
+.coupon-submit.small {
+    padding: 0;
+
+}
+
+.coupon-submit.small {
+    height: 35px;
+    padding: 0;
+    width: 100%;
+}
+
+.coupon-code-title-wrap{
+	margin: 16px auto;
+	position: relative;
+}
+
+.coupon-code-title-wrap:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -0.5px;
+	height: 1px;
+	width: 100%;
+	background: #dbdbdb;
+	z-index: 1;
+}
+
+.coupon-title{
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #454545;
+	z-index: 2;
+	display: inline-block;
+	padding: 3px 7px;
+	background: #fff;
+	position: relative;
+}
+
+.cart-total-price-wrap{
+padding-top: 40px;
+white-space: nowrap;
+}
+
+@media only screen and (max-width: 1024px){
+	.cart-total-price-wrap{
+		padding-top: 0;
+		margin-top: -2px;
+	}
+
+	.button_cart_submit{
+
+	margin-top: 25px !important;
+}
+
+
+
+}
+
+
+@media only screen and (max-width: 641px){
+	.coupon-margin{
+		margin-bottom: 20px;
+	}
+
+.the-cart-wrap {
+    margin-bottom: 60px;
+}
+
+	.button_cart_submit{
+
+	margin-top: 20px !important;
+}
+}
+
+.cart-total-price-text{
+	font-size: 18px;
+	color: #454545;
+	text-transform: uppercase;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.cart-total-price-number{
+	vertical-align: middle;
+	font-size: 32px;
+	color: #454545;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*MEDIA*/
 
@@ -2229,7 +2374,7 @@ select:hover{
     font-size: 31px;
     margin: 0 0 1px;
 }
-		
+
 		.columns.medium-24.small-24.tab-content-wrap {
 			margin-left: -76px;
 			padding-left: 70px;

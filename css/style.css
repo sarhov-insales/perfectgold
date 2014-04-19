@@ -891,6 +891,7 @@ img.centered{
 .carousel-mod-item-sku{
 	text-align: center;
 	margin-bottom: 15px;
+	min-height: 18px;
 }
 .carousel-mod-item-sku span{
 	color: #767676;

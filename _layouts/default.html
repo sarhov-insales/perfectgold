@@ -29,7 +29,9 @@
     <div class="inner-wrap">
 
       {% include mobile-nav.html %}
-
+{% for page in site.pages %}
+  <a href="{{page.url}}">{{page.title}}</a>
+{% endfor %}
       <section class="main-section row">
        <div class=" main-inner columns">
 
